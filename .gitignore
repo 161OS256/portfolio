@@ -8,6 +8,6 @@
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
-*dist
+*/dist/
 *action.yml
 *.htaccess
