@@ -1,0 +1,37 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+<center><h1>Marek Bartocha</h1></center>
+<center><p>{{'programer'|trans }}</p></center>
+<p>{{'intro'|trans}}</p>
+
+
+
+
+
+
+  <div class="md:grid lg:grid-cols-3 gap-20 w-4/5 mx-auto py-15 ">
+        <!-- Review Item -->
+       
+            <div class="text-center pt-8 pb-4">
+                <a href="{{ path('pascal_index')}}">
+                <img src="{{ asset('img/project-01.png') }}" alt="" class="shadow-xl rounded-md"/>
+                </a>
+
+                <h2 class="text-gray-700 font-bold text-3xl py-2">
+                   {{'project-01.title' |trans}}
+                </h2>
+
+                <span class="text-gray-500">
+                    By <span class="italic text-sm text-gray-800">Code With Dary | 28.01.2022
+                </span>
+
+                <p class="text-base text-gray-700 pt-4 pb-10 leading-8 font-light">
+                   {{'project-01.descryption' |trans}}
+                </p>
+
+               
+            </div>
+       
+    </div>
+{% endblock %}
