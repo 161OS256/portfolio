@@ -20,25 +20,31 @@ class HomeController extends AbstractController
         // Tłumaczenie
         $translatedText = $translator->trans('hello');
 
-        // Tablica projektów puzniej pociącnę to z bazy
+        // Tablica projektów puzniej pociącnę to z bazy gdzie będzue więcej projektów
         $projects = [
             'project1' => [
                 'name' => $translator->trans('project-01.title'),
                 'description' => $translator->trans('project-01.description'),
                 'src' => 'img/project-01.png', // Ścieżka do obrazka w public/img/
                 'route' => 'pascal',
+                'begin' => $translator->trans('project-01.start-coding'),
+                'using' => 'Pascal HTML, CSS, JavaScript',
             ],
             'project2' => [
                 'name' => $translator->trans('project-01.title'),
                 'description' => $translator->trans('project-02.description'),
                 'src' => 'img/project-01.png',
                 'route' => 'pascal',
+                'begin' => $translator->trans('project-01.start-coding'),
+                'using' => 'Pascal HTML, CSS, JavaScript',
             ],
             'project3' => [
                 'name' => $translator->trans('project-01.title'),
                 'description' => $translator->trans('project-03.description'),
                 'src' => 'img/project-01.png',
                 'route' => 'pascal',
+                'begin' => $translator->trans('project-01.start-coding'),
+                'using' => 'Pascal HTML, CSS, JavaScript',
             ],
         ];
 
@@ -47,6 +53,7 @@ class HomeController extends AbstractController
             'message' => $translatedText,
             'current_locale' => $_locale,
             'projects' => $projects, // Dodajemy projekty
+            'site' => '',
         ]);
     }
 }

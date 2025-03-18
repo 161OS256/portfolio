@@ -10,10 +10,10 @@ intro: "Jestem młodszym programistą, który chce się rozwijać w branży IT. 
 
 
 programer: "Młodszy Programista"
+technologies: "Technologie:"
 
 project-01:
   title: "Program do sterowania ogrzewaniem domu"
-  technologies: "Technologie: Pascal HTML, CSS, JavaScript"
   start-coding: "Projekt rozpoczęty w 2017r."
   messages:
     description: | 

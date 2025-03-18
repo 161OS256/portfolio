@@ -9,7 +9,7 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js" defer></script>
     </head>
-    <body class="bg-gray-800 h-screen antialiased leading-none font-sans">
+    <body class="bg-gray-800 h-screen antialiased leading-none font-sans min-h-screen flex flex-col">
             {% block header %}
                 <header>
                     <nav
@@ -63,9 +63,9 @@
                                 </li>
                             </ul>
                                <span>
-                                    <a class="inline-block text-gray-300 no-underline hover:text-gray-200 hover:text-underline" href="{{ path('home_index', {'_locale': 'en'}) }}">English</a> 
+                                    <a class="inline-block text-gray-300 no-underline hover:text-gray-200 hover:text-underline" href="{{ path('home_index', {'_locale': 'en'}) }}/{{ site }}">English</a> 
                                     <span class="inline-block text-gray-300 no-underline hover:text-gray-200 hover:text-underline">|</span> 
-                                    <a class="inline-block text-gray-300 no-underline hover:text-gray-200 hover:text-underline" href="{{ path('home_index', {'_locale': 'pl'}) }}">Polski</a>
+                                    <a class="inline-block text-gray-300 no-underline hover:text-gray-200 hover:text-underline" href="{{ path('home_index', {'_locale': 'pl'}) }}/{{ site }}">Polski</a>
                                </span>
                         </div>
                     </nav>

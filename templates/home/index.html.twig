@@ -1,4 +1,4 @@
-{% extends "./base.html.twig" %}
+{% extends "base.html.twig" %}
 
 {% block body %}
     <div class="w-4/5 m-auto text-center">
@@ -18,7 +18,7 @@
         <!-- Review Item -->
         {% for project in projects %}
             <div class="text-center pt-8 pb-4">
-                <a href="/{{ current_locale }}/{{project.route}}">
+                <a href="/{{ current_locale }}/{{ project.route }}">
                 <img src="{{ asset(project.src) }}" alt="" class="shadow-xl rounded-md" />
                 </a>
                 <h2 class="text-gray-500 font-bold text-2xl py-2">
@@ -26,8 +26,12 @@
                 </h2>
 
                 <span class="text-gray-500">
-                    <span class="italic text-sm ">{{'project-01.start-coding' |trans}}</span>
+                    <span class="italic text-sm ">{{project.begin}}</span>
                 </span>
+
+                <p class="text-base text-gray-200 pt-4 pb-10 leading-8 font-light">
+                     {{'technologies' |trans}} <br> {{project.using}}
+                </p>
             </div>
         {% endfor %}
     </div>
