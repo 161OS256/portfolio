@@ -1,6 +1,14 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
-<h1>Welcome to my test page</h1>
-<a href="{{ path('product_index')}}">Products</a>
+<div style="text-align: right;">
+    <a href="{{ path('home_index', {'_locale': 'en'}) }}">English</a> | 
+    <a href="{{ path('home_index', {'_locale': 'pl'}) }}">Polski</a>
+</div>
+<center><h1>Marek Bartocha</h1></center>
+<center><p>{{'programer'|trans }}</p></center>
+<p>{{'intro'|trans}}</p>
+
+
+<a href="{{ path('pascal_index')}}">Pascal</a>
 {% endblock %}
