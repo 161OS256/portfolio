@@ -21,11 +21,11 @@ class LocaleRedirectListener
         $path = $request->getPathInfo();
 
         // Sprawdzenie czy użytkownik jest na stronie głównej
-        if ($path === '/' || $path === '/portfolio/public') {
+        if ($path === '/' || $path === '/') {
             $locale = $request->getPreferredLanguage(['pl', 'en']) ?? 'en';
 
             // Przekierowanie na odpowiednią wersję językową
-            $response = new RedirectResponse("/portfolio/public/$locale/");
+            $response = new RedirectResponse("$locale/");
             $event->setResponse($response);
         }
     }
