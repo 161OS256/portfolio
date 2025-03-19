@@ -1,38 +1,37 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
-    <div class="w-4/5 m-auto text-center">
-        <div class="py-12 border-b border-gray-200">
-            <h1 class="text-6xl pt-12 pb-8 text-gray-500">
-                {{'projects'|trans}} 
-            </h1>
-
-            <span class="font-light text-gray-200 italic">
-                {{'coder' |trans}}
-            </span>
-        </div>
-    </div>
+<center><h1>Marek Bartocha</h1></center>
+<center><p>{{'programer'|trans }}</p></center>
+<p>{{'intro'|trans}}</p>
 
 
-    <div class="md:grid lg:grid-cols-3 gap-20 w-4/5 mx-auto py-15 ">
+
+
+
+
+  <div class="md:grid lg:grid-cols-3 gap-20 w-4/5 mx-auto py-15 ">
         <!-- Review Item -->
-        {% for project in projects %}
+       
             <div class="text-center pt-8 pb-4">
-                <a href="/{{ current_locale }}/{{ project.route }}">
-                <img src="{{ asset(project.src) }}" alt="" class="shadow-xl rounded-md" />
+                <a href="{{ path('pascal_index')}}">
+                <img src="{{ asset('img/project-01.png') }}" alt="" class="shadow-xl rounded-md"/>
                 </a>
-                <h2 class="text-gray-500 font-bold text-2xl py-2">
-                   {{project.name}}
+
+                <h2 class="text-gray-700 font-bold text-3xl py-2">
+                   {{'project-01.title' |trans}}
                 </h2>
 
                 <span class="text-gray-500">
-                    <span class="italic text-sm ">{{project.begin}}</span>
+                    By <span class="italic text-sm text-gray-800">Code With Dary | 28.01.2022
                 </span>
 
-                <p class="text-base text-gray-200 pt-4 pb-10 leading-8 font-light">
-                     {{'technologies' |trans}} <br> {{project.using}}
+                <p class="text-base text-gray-700 pt-4 pb-10 leading-8 font-light">
+                   {{'project-01.descryption' |trans}}
                 </p>
+
+               
             </div>
-        {% endfor %}
+       
     </div>
 {% endblock %}
