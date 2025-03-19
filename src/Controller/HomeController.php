@@ -18,32 +18,13 @@ class HomeController extends AbstractController
         $request->setLocale($_locale);
 
         // Tłumaczenie
-        $translatedText = $translator->trans('O mnie');
+        $translatedText = $translator->trans('programer');
 
         // Tablica projektów puzniej pociącnę to z bazy gdzie będzue więcej projektów
         $projects = [
             'project1' => [
-                'name' => $translator->trans('project-01.title'),
-                'description' => $translator->trans('project-01.description'),
-                'src' => 'img/project-01.png', // Ścieżka do obrazka w public/img/
+                'src' => 'img/project-01.png', 
                 'route' => 'pascal',
-                'begin' => $translator->trans('project-01.start-coding'),
-                'using' => 'Pascal HTML, CSS, JavaScript',
-            ],
-            'project2' => [
-                'name' => $translator->trans('project-01.title'),
-                'description' => $translator->trans('project-01.description'),
-                'src' => 'img/project-01.png',
-                'route' => 'pascal',
-                'begin' => $translator->trans('project-01.start-coding'),
-                'using' => 'Pascal HTML, CSS, JavaScript',
-            ],
-            'project3' => [
-                'name' => $translator->trans('project-01.title'),
-                'description' => $translator->trans('project-01.description'),
-                'src' => 'img/project-01.png',
-                'route' => 'pascal',
-                'begin' => $translator->trans('project-01.start-coding'),
                 'using' => 'Pascal HTML, CSS, JavaScript',
             ],
         ];

@@ -8,18 +8,17 @@ coder: "Koduj z Markiem"
 
 intro: "Jestem młodszym programistą, który chce się rozwijać w branży IT. Na tej stronie znajdziesz moje projekty, które stworzyłem w ramach nauki programowania. Zapraszam do zapoznania się z nimi."
 
-
 programer: "Młodszy Programista"
 technologies: "Technologie:"
 
 project-01:
   title: "Program do sterowania ogrzewaniem domu"
   start-coding: "Projekt rozpoczęty w 2017r."
-  messages:
-    description: | 
-      Program do sterowania ogrzewaniem domu, który pozwala na ustawienie temperatury w jednym pomieszczeniu (Salon).
-      Sterowanie odbywa się za pomocą zdalnego pulpitu w tablecie lub telefonie.
-      Jest możwliwość samego podglądu temperatury na telewizorze z przeglądarką HTML.
+  
+  description: | 
+    Program do sterowania ogrzewaniem domu, który pozwala na ustawienie temperatury w jednym pomieszczeniu (Salon).
+    Sterowanie odbywa się za pomocą zdalnego pulpitu w tablecie lub telefonie.
+    Jest możwliwość samego podglądu temperatury na telewizorze z przeglądarką HTML.
   
 
 

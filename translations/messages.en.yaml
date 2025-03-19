@@ -9,16 +9,16 @@ coder: "Code with Mark"
 intro: "I am a junior programmer who wants to develop in the IT industry. On this site you will find my projects that I have created as part of learning programming. I invite you to get to know them."
 
 programer: "Junior Programmer"
+technologies: "Technologies:"
 
 project-01:
   title: "Home heating control program"
-  technologies: "Technologies: Pascal HTML, CSS, JavaScript"
   start-coding: "The project started in 2017"
-  messages:
-    description: | 
-      Home heating control program that allows you to set the temperature in one room (Living Room).
-      Control is done via a remote desktop on a tablet or phone.
-      It is possible to view the temperature on a TV with HTML browser.
+ 
+  description: | 
+    Home heating control program that allows you to set the temperature in one room (Living Room).
+    Control is done via a remote desktop on a tablet or phone.
+    It is possible to view the temperature on a TV with HTML browser.
 
 
 
