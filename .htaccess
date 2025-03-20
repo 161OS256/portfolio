@@ -1,8 +1,0 @@
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-
-    # Przekierowanie do katalogu public
-    RewriteCond %{REQUEST_URI} !^/portfolio/public/ [NC]
-    RewriteCond %{REQUEST_URI} !\.(css|js|ico|gif|jpg|png|svg|woff|woff2|eot|ttf|otf|mp4|webm|ogg|json|xml)$ [NC]
-    RewriteRule ^(.*)$ /portfolio/public/$1 [L]
-</IfModule>
