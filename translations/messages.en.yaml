@@ -1,6 +1,36 @@
 # messages.en.yaml
 home: "Home"
-about: "About me"
+about: "About"
+about-me-title: “A few words about me”.
+about-me-01: |
+  My adventure with programming began in late 2015 / 2016 when I was looking for a solution to control the heating of the house.
+  There were ready-made solutions available on the market but they were available with the latest heating systems.
+  I have an older generation heating system and could not find a suitable solution.
+  I decided to write my own program that would meet my expectations.
+  This program still works today and meets my expectations and is constantly being developed.
+
+about-me-02: |
+  With time, more needs appeared and another project was created that made my life easier in my professional work, working as an international driver
+  I had seemingly simple but time-consuming duties writing reports of lists of entries and exits from each country (EU requirements) which I decided to automate
+  and I wrote an application that helped me with this and, by the way, kept track of work and rest times at a time when digital tachographs were just entering the market
+  and everything had to be noted down manually in a notebook and still remember the time of work and rest in the last 28 days giving shortened weekly rests
+  and many other duties that had to be fulfilled. I used this application from the beginning of 2016 until the end of 2024.
+
+
+
+about-me-03: |
+  The next stage of the programming adventure was to start volunteering in what used to be a club now an association of radio communications enthusiasts.
+  At the club, I volunteered to help myself because the club's 10th anniversary was approaching and I wanted to help organize a graduation campaign to mark the occasion
+  The club needed a homepage where you could see information about the upcoming anniversary and graduation campaign, and a cluster 
+  (a form for entering established communications and a mechanism for counting points for established communications) 
+  initially, due to lack of time and knowledge, I quickly set up the site on a ready-made template to gain time to build the cluster and the mechanism for counting points
+  after the completion of the graduation campaign, I decided to write my own system for managing the club's website, and that's how the system was created,
+  which still works today and is being developed.
+
+
+
+my-projects: "Projects"
+
 contact: "Contact"
 
 projects: "Project Review"
@@ -12,13 +42,24 @@ programer: "Junior Programmer"
 technologies: "Technologies:"
 
 project-01:
-  title: "Home heating control program"
+  title: "Home heating control"
   start-coding: "The project started in 2017"
  
   description: | 
-    Home heating control program that allows you to set the temperature in one room (Living Room).
-    Control is done via a remote desktop on a tablet or phone.
-    It is possible to view the temperature on a TV with HTML browser.
+    The program I wrote for my own purposes is used to control the underfloor heating at home, and controls the air intake to the fireplace in the living room
+    which allows you to control the temperature in the water jacket in the fireplace, which is connected to the central heating.
+    
+    The program allows you to set the temperature in one room (the living room).
+    The control is carried out via a remote desktop on a tablet or phone.
+    It is possible to view the temperature itself on a TV with an HTML viewer.
+
+  p1-01: “Main program view”
+  p1-02: “Temperature settings”
+  p1-03: “Mini server settings”
+  p1-04: “Temperature graph”
+  p1-05: “View from browser login”
+  p1-06: “View from the browser temperature preview”
+  p1-07: “Report”
 
 
 

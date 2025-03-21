@@ -25,7 +25,7 @@ class HomeController extends AbstractController
             'project1' => [
                 'src' => 'img/project-01.png', 
                 'route' => 'pascal',
-                'using' => 'Pascal HTML, CSS, JavaScript',
+                'using' => 'Pascal, HTML, CSS, JavaScript',
             ],
         ];
 

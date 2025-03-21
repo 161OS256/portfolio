@@ -1,14 +1,12 @@
 body {
-    background-color: rgb(124, 113, 113);
+    background-color: rgb(104, 109, 103);
+    color: #2f372e;
 }
 
 .rounded-lg {
-    border-radius: 20px; /* Zwiększ wartość, aby bardziej zaokrąglić rogi */
+    border-radius: 15px; /* Zwiększ wartość, aby bardziej zaokrąglić rogi */
 }
 
-.navbar-custom {
-    background-color: #007bff; /* Kolor tła */
-}
 .navbar-custom .navbar-brand,
 .navbar-custom .nav-link {
     color: #fff !important; /* Biały kolor tekstu */
@@ -19,3 +17,27 @@ body {
 .btn-language {
     border-radius: 20px;
 }
+
+.row {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.row div {
+    padding: 25px;
+}
+
+.intro {
+    padding: 0 50px 0 50px;
+}
+
+.navbar {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+p {
+    font-size: 20px; 
+}
+
+
