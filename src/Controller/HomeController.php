@@ -20,7 +20,7 @@ class HomeController extends AbstractController
         // Tłumaczenie
         $translatedText = $translator->trans('programer');
 
-        // Tablica projektów puzniej pociącnę to z bazy gdzie będzue więcej projektów
+        // Tablica projektów puzniej pociącnę to z bazy gdy będzie więcej projektów
         $projects = [
             'project1' => [
                 'src' => 'img/project-01.png', 

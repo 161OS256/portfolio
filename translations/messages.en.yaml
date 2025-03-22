@@ -16,8 +16,6 @@ about-me-02: |
   and everything had to be noted down manually in a notebook and still remember the time of work and rest in the last 28 days giving shortened weekly rests
   and many other duties that had to be fulfilled. I used this application from the beginning of 2016 until the end of 2024.
 
-
-
 about-me-03: |
   The next stage of the programming adventure was to start volunteering in what used to be a club now an association of radio communications enthusiasts.
   At the club, I volunteered to help myself because the club's 10th anniversary was approaching and I wanted to help organize a graduation campaign to mark the occasion
@@ -27,6 +25,12 @@ about-me-03: |
   after the completion of the graduation campaign, I decided to write my own system for managing the club's website, and that's how the system was created,
   which still works today and is being developed.
 
+about-me-04: |
+  Another tiny project, but important to me because it was my first project for a company that needed a solution to monitor the work of a struc 
+  Of course, there were many solutions on the market, but all of them required handling by an employee (readers for reflecting control points).
+  system should be easy to use and the planer should not be able to bypass it or break it (readers can be dropped on the ground and can be damaged) I decided to write an application.
+  I wrote a program that operates a bell switch as a control point for the presence of the planer at a given place and time, producing a report available on the phone 
+  (in a browser) from off-site. The program written in 2023 / 2024 works and is used to this day every now and then I fix minor glitches.
 
 
 my-projects: "Projects"
@@ -61,6 +65,6 @@ project-01:
   p1-06: “View from the browser temperature preview”
   p1-07: “Report”
 
-
+right: "All rights reserved."
 
 

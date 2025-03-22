@@ -9,11 +9,31 @@ body {
 
 .navbar-custom .navbar-brand,
 .navbar-custom .nav-link {
+    color: #c8ced4  !important; /* Biały kolor tekstu */
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
     color: #fff !important; /* Biały kolor tekstu */
 }
+ 
 .navbar-custom .nav-link:hover {
-    color: #f8f9fa !important; /* Jaśniejszy kolor po najechaniu */
+    color: #fff !important; /* Jaśniejszy kolor po najechaniu */
 }
+
+.dropdown-menu {
+    background-color:  rgb(104, 109, 103);
+    border: 0;
+}
+
+.dropdown-item {
+    color: #fff !important; 
+}
+
+.dropdown-menu :hover {
+    background-color:  rgb(104, 109, 103);
+    color: #c8ced4 !important; /* Jaśniejszy kolor po najechaniu */
+}
+
 .btn-language {
     border-radius: 20px;
 }
@@ -40,4 +60,20 @@ p {
     font-size: 20px; 
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;  /* To powoduje, że kontener będzie rozciągał się na całą dostępną przestrzeń */
+}
+
+.footer {
+    margin-top: auto;  /* Dzięki temu stopka będzie zawsze na dole */
+}

@@ -14,50 +14,56 @@
         {% endblock %}
     </head>
     <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-custom">
-            <a class="navbar-brand fw-bold" href="/{{current_locale}}">{{ 'programer'|trans }}</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-custom">
+                <a class="navbar-brand fw-bold" href="/{{current_locale}}">{{ 'programer'| trans }}</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/{{current_locale}}">{{ 'home' | trans }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/{{current_locale}}/about">{{ 'about' | trans }}</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                            {{ 'my-projects' | trans }}
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                            <li><a class="dropdown-item" href="/{{current_locale}}/service1">{{ 'service1' | trans }}</a></li>
-                            <li><a class="dropdown-item" href="/{{current_locale}}/service2">{{ 'service2' | trans }}</a></li>
-                            <li><a class="dropdown-item" href="/{{current_locale}}/service3">{{ 'service3' | trans }}</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/{{current_locale}}/contact">{{ 'contact' | trans }}</a>
-                    </li>
-                </ul>
-                <a href="{{ path('home_index', {'_locale': 'pl'}) }}/{{site}}" class="btn btn-light btn-sm ms-3 btn-language">🇵🇱 PL</a>
-                <a href="{{ path('home_index', {'_locale': 'en'}) }}/{{site}}" class="btn btn-light btn-sm ms-3 btn-language">🇬🇧 EN</a>
-            </div>
-        </nav>
-
-        <br><br>
-            {% for message in app.flashes('notice') %}
-                <div class="notice">
-                    {{ message }}
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link {% if site == '' %}active{% endif %}" href="/{{current_locale}}"  >{{ 'home'| trans }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if site == 'about' %}active{% endif %}" href="/{{current_locale}}/about">{{ 'about'| trans }}</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle {% if site == 'pascal' %}active{% endif %}" href="/{{current_locale}}/{{site}}" id="submenu" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+                                {{ 'my-projects' | trans }}
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="submenu">
+                                <li><a class="dropdown-item" href="/{{current_locale}}/pascal"> {{'project-01.title' |trans}}</a></li>
+                            
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if site == 'contact' %}active{% endif %}" href="/{{current_locale}}/contact">{{ 'contact'| trans }}</a>
+                        </li>
+                    </ul>
+                    <a href="{{ path('home_index', {'_locale': 'pl'}) }}/{{site}}" class="btn btn-light btn-sm ms-3 btn-language">🇵🇱 PL</a>
+                    <a href="{{ path('home_index', {'_locale': 'en'}) }}/{{site}}" class="btn btn-light btn-sm ms-3 btn-language">🇬🇧 EN</a>
                 </div>
-            {% endfor %}
+        
+            </nav>
 
-            {% block body %}{% endblock %}
-        </body>
-    </div>
+            <br><br>
+                {% for message in app.flashes('notice') %}
+                    <div class="notice">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+
+                {% block body %}{% endblock %}
+ </div>
+            <footer class="footer mt-5">
+                <div class="container text-center">
+                    <p>&copy; 2025 Marek Bartocha. {{ 'right'| trans }}</p>
+                </div>
+            </footer>
+       
+    </body>
 </html>
