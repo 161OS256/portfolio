@@ -3,10 +3,6 @@ body {
     color: #2f372e;
 }
 
-.rounded-lg {
-    border-radius: 15px; /* Zwiększ wartość, aby bardziej zaokrąglić rogi */
-}
-
 .navbar-custom .navbar-brand,
 .navbar-custom .nav-link {
     color: #c8ced4  !important; /* Biały kolor tekstu */
@@ -39,12 +35,11 @@ body {
 }
 
 .row {
-    margin-top: 50px;
     padding: 20px;
 }
 
 .row div {
-    padding: 25px;
+    padding: 15px;
 }
 
 .intro {
@@ -76,4 +71,16 @@ body {
 
 .footer {
     margin-top: auto;  /* Dzięki temu stopka będzie zawsze na dole */
+}
+
+a {
+    color: #c8ced4;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 15px;
+    border-radius: 25px; /* Zwiększ wartość, aby bardziej zaokrąglić rogi */
 }

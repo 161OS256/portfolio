@@ -1,13 +1,23 @@
 # messages.en.yaml
 home: "Home"
 about: "About"
-about-me-title: “A few words about me”.
+about-me-title: “A few words about me”
+my-projects: "Projects"
+contact: "Contact"
+projects: "Project Review"
+coder: "Code with Mark"
+intro: |
+  I am a junior programmer who wants to grow in the IT industry. On this page you will find my projects that I have created in the course of 
+  learning programming. I invite you to take a look at them.
+
+programer: "Junior Programmer"
+technologies: "Technologies:"
 about-me-01: |
   My adventure with programming began in late 2015 / 2016 when I was looking for a solution to control the heating of the house.
   There were ready-made solutions available on the market but they were available with the latest heating systems.
   I have an older generation heating system and could not find a suitable solution.
-  I decided to write my own program that would meet my expectations.
-  This program still works today and meets my expectations and is constantly being developed.
+  I decided to write my own program that would meet my needs.
+  This program is still working today and is constantly being developed.
 
 about-me-02: |
   With time, more needs appeared and another project was created that made my life easier in my professional work, working as an international driver
@@ -33,38 +43,46 @@ about-me-04: |
   (in a browser) from off-site. The program written in 2023 / 2024 works and is used to this day every now and then I fix minor glitches.
 
 
-my-projects: "Projects"
 
-contact: "Contact"
-
-projects: "Project Review"
-coder: "Code with Mark"
-
-intro: "I am a junior programmer who wants to develop in the IT industry. On this site you will find my projects that I have created as part of learning programming. I invite you to get to know them."
-
-programer: "Junior Programmer"
-technologies: "Technologies:"
 
 project-01:
   title: "Home heating control"
   start-coding: "The project started in 2017"
  
-  description: | 
-    The program I wrote for my own purposes is used to control the underfloor heating at home, and controls the air intake to the fireplace in the living room
-    which allows you to control the temperature in the water jacket in the fireplace, which is connected to the central heating.
-    
+  description-01: | 
+    The program I wrote for my own use is used to control the underfloor heating at home, and controls the air intake to the fireplace in the living room
+    which allows you to control the temperature in the water jacket in the fireplace, which is connected to the central heating, the program also switches the 3-way valve
+    which changes the water circulation depending on whether we are burning in the fireplace or in a traditional stove in the boiler room.
     The program allows you to set the temperature in one room (the living room).
     The control is carried out via a remote desktop on a tablet or phone.
     It is possible to view the temperature itself on a TV with an HTML viewer.
+    As you can see in the picture, data from the fireplace was added to the program so as you can guess in the plans for expansion.
+
+  description-02: | 
+    The whole program is written in Pascal in Delphi 7 environment with a bit of html for browser view and javascript (logging).
+    The program runs on a desktop computer running Windows XP temperatures are taken using an adapter plugged into a com input to the adapter I plugged in 
+    dallas ds18b20 sensors which have a built-in 16 bit ram memory with a unique id number which allows to hook up multiple sensors to a single com port.
+
+  description-03: |
+    Initially, due to lack of knowledge of how to read data from sensors in Pascal language, I used a ready-made program (Logtemp) which read data from sensors and wrote them to an xml file every 
+    them to an xml file at an interval of every 3 minutes and my program read the data from the xml file every 3 minutes and made calculations using a table made from the
+    chart that provided me with data on what the temperature of the floor heating should be depending on the outside temperature.
+    As time influenced, my program developed and was already reading sensor data on its own became more and more independent.
 
   p1-01: “Main program view”
   p1-02: “Temperature settings”
-  p1-03: “Mini server settings”
+  p1-03: “Information about the server”
   p1-04: “Temperature graph”
   p1-05: “View from browser login”
   p1-06: “View from the browser temperature preview”
   p1-07: “Report”
 
+
+
+
+
+
+link-001: “Link to repository”
 right: "All rights reserved."
 
 
