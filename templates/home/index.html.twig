@@ -12,11 +12,11 @@
             <a href="{{ path('pascal_index')}}">
             <img src="{{ asset('img/p1-01.png') }}" class="img-fluid rounded-lg" alt="Obrazek">
             </a>
-            <h5 class="text-gray-700 font-bold py-2 text-center">
-                   {{'project-01.title' |trans}}
-            </h5>   
-            <b><p class="text-center" >{{projects.project1.using}}</p></b>
-            <p class="text-center" >{{'project-01.start-coding' |trans}}</p>
+            <p class="text-gray-700 font-bold py-0 text-center">
+                {{'project-01.title' |trans}}<br>
+                {{projects.project1.using}}<br>
+                {{'project-01.start-coding' |trans}}
+            </p>   
         </div>
     </div>
 

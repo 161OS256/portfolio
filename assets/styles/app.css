@@ -68,10 +68,11 @@ body {
 
 .footer {
     margin-top: auto;  /* Dzięki temu stopka będzie zawsze na dole */
+    background-color: rgb(87, 92, 87);
 }
 
 a {
-    color: #c8ced4;
+    color: #c8ced4; 
 }
 
 img {
