@@ -1,14 +1,15 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<center><h1>{{'about-me-title' |trans}}</h1></center>
+<center><h1>{{'about-page.title' |trans}}</h1></center>
 
 <div class="container intro mt-4">
-    <p>{{'about-me-01'|trans}}<br>
-    <a href="pascal"> {{'project-01.title' |trans}}</a></p>
-    <p>{{'about-me-02'|trans}}</p>
-    <p>{{'about-me-03'|trans}}</p>
-    <p>{{'about-me-04'|trans}}</p>
+    <p>{{'about-page.description-01'|trans}}<br>
+    <a href="pascal"> {{'pascal-page.title' |trans}}</a></p>
+    <p>{{'about-page.description-02'|trans}}</br>
+     <a href="workorganizer"> {{'workorganizer-page.title' |trans}}</a></p>
+    <p>{{'about-page.description-03'|trans}}</p>
+    <p>{{'about-page.description-04'|trans}}</p>
 </div>
 
 {% endblock %}

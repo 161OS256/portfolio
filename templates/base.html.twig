@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{% block title %}Marek Bartocha{% endblock %}</title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
 
@@ -30,23 +31,23 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link {% if site == '' %}active{% endif %}" href="/{{current_locale}}"  >{{ 'home'| trans }}</a>
+                            <a class="nav-link {% if site == '' %}active{% endif %}" href="/{{current_locale}}"  >{{ 'home-page.home'| trans }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {% if site == 'about' %}active{% endif %}" href="/{{current_locale}}/about">{{ 'about'| trans }}</a>
+                            <a class="nav-link {% if site == 'about' %}active{% endif %}" href="/{{current_locale}}/about">{{ 'home-page.about'| trans }}</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle {% if site == 'pascal' %}active{% endif %}" href="/{{current_locale}}/{{site}}" id="submenu" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
-                                {{ 'my-projects' | trans }}
+                                {{ 'home-page.projects' | trans }}
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="submenu">
-                                <li><a class="dropdown-item" href="/{{current_locale}}/pascal"> {{'project-01.title' |trans}}</a></li>
+                                <li><a class="dropdown-item" href="/{{current_locale}}/pascal"> {{'pascal-page.title' |trans}}</a></li>
                             
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {% if site == 'contact' %}active{% endif %}" href="/{{current_locale}}/contact">{{ 'contact'| trans }}</a>
+                            <a class="nav-link {% if site == 'contact' %}active{% endif %}" href="/{{current_locale}}/contact">{{ 'home-page.contact'| trans }}</a>
                         </li>
                     </ul>
                     <a href="{{ path('home_index', {'_locale': 'pl'}) }}/{{site}}" class="btn btn-light btn-sm ms-3 btn-language">🇵🇱 PL</a>
@@ -71,7 +72,7 @@
                     Copyright &copy; marekbal.joton.dev (2025-2025) 
                 </span>
                 <br>
-                <a href="/{{current_locale}}/licenses"> {{'licenses-title'|trans}}</a>
+                <a href="/{{current_locale}}/licenses"> {{'home-page.licenses-title'|trans}}</a>
                 <br>
             </div>
         </footer>
@@ -130,10 +131,10 @@
                     event.preventDefault(); 
                     if (moreText.classList.contains("hidden")) {
                         moreText.classList.remove("hidden");
-                        readMore.textContent = "Czytaj mniej"; 
+                        readMore.textContent = "{{'home-page.less'|trans}}"; 
                     } else {
                         moreText.classList.add("hidden");
-                        readMore.textContent = "Czytaj więcej";
+                        readMore.textContent = "{{'home-page.more'|trans}}";
                     }
                 });
             });
