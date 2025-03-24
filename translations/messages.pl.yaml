@@ -7,48 +7,47 @@ contact: Kontakt
 projects: Przegląd Projektów
 coder: Koduj z Markiem
 intro: |
-  Jestem młodszym programistą, który chce się rozwijać w branży IT. Na tej stronie znajdziesz moje projekty, które stworzyłem w ramach nauki programowania.
+  Chciałbym się rozwijać w branży IT. Interesuje mnie stanowisko Młodszego Programisty. Na tej stronie znajdziesz moje projekty, które stworzyłem w ramach nauki programowania.
   Zapraszam do zapoznania się z nimi.
 
 programer: Młodszy Programista
 technologies: 'Technologie:'
 about-me-01: |
   Moja przygoda z programowaniem zaczęła się na przełomie 2015 / 2016 roku gdy szukałem rozwiązania do sterowania ogrzewaniem domu.
-  na rynku były dostępne gotowe rozwiązania ale były one dostępne wraz z najnowszymi systemami grzewczymi.
+  Na rynku były dostępne gotowe rozwiązania ale były one dostępne wraz z najnowszymi systemami grzewczymi.
   Ja posiadam system grzewczy starszej generacji i nie mogłem znaleźć odpowiedniego rozwiązania.
-  Postanowiłem napisać własny program który spełniał by moje oczekiwania.
+  Postanowiłem napisać własny program, który spełniałby moje oczekiwania.
   Program ten działa do dziś i jest stale rozwijany.
 
 about-me-02: |
-  Z czasem pojawiały się kolejne potrzeby i powstał kolejny projekt który ułatwił mi życie w pracy zawodowej, pracując jako kierowca międzynarodowy
-  miałem na pozór proste ale czasochłonne obowiązki pisanie raportów list wjazdów i wyjazdów z poszczególnych krajów (wymogi Unijne) które postanowiłem zautomatyzować
-  i napisałem aplikację która mi w tym pomogła i przy okazji pilnowała czasu pracy i odpoczynku w czasach kiedy dopiero wkraczały na rynek tachografy cyfrowe
+  Z czasem pojawiały się kolejne potrzeby i powstał kolejny projekt, który ułatwił mi życie w pracy zawodowej, pracując jako kierowca międzynarodowy
+  miałem na pozór proste ale czasochłonne obowiązki jak np.pisanie raportów list wjazdów i wyjazdów z poszczególnych krajów (wymogi Unijne), które postanowiłem zautomatyzować
+  i napisałem aplikację, która mi w tym pomogła i przy okazji pilnowała czasu pracy i odpoczynku w czasach kiedy dopiero wkraczały na rynek tachografy cyfrowe
   i wszystko trzeba było notować ręcznie w zeszycie i jeszcze pamiętać czas pracy i odpoczynku w ciągu ostatnich 28 dni oddawanie skróconych odpoczynków tygodniowych
   i wiele innych obowiązków które trzeba było spełnić. Aplikacji tej używałem od początku 2016r do końca 2024r.
 
 about-me-03: |
-  Kolejny etap przygody z programowaniem to rozpoczęcie wolontariatu w kiedyś klubie dziś już stowarzyszeniu pasjonatów łączności radiowej.
-  W klubie sam zgłosiłem się do pomocy ponieważ zbliżała się 10 rocznica klubu i chciałem pomóc w organizacji akcji dyplomowej z tej okazji
-  Klub potrzebował strony domowej gdzie można by było zobaczyć informacje o nadchodzącej rocznicy i akcji dyplomowej oraz clustera 
+  Kolejny etap przygody z programowaniem to rozpoczęcie wolontariatu w kiedyś klubie dziś już Stowarzyszeniu Pasjonatów łączności Radiowej.
+  W klubie sam zgłosiłem się do pomocy ponieważ zbliżała się 10 rocznica klubu i chciałem pomóc w organizacji akcji dyplomowej z tej okazji.
+  Klub potrzebował strony domowej gdzie można by było zobaczyć informację o nadchodzącej rocznicy i akcji dyplomowej oraz clustera 
   (formularza do wprowadzania nawiązanych łączności i mechanizmu do zliczania punktów za nawiązane łączności) 
   początkowo z powodu braku czasu i wiedzy na szybko postawiłem stronę na gotowym szablonie by zyskać czas na budowę clustera i mechanizmu zliczania punktów
-  po zakończeniu akcji dyplomowej postanowiłem napisać własny system zarządzania stroną klubową i tak powstał system który działa do dziś i jest rozwijany.
+  po zakończeniu akcji dyplomowej postanowiłem napisać własny system zarządzania stroną klubową i tak powstał system, który działa do dziś i jest rozwijany.
 
 about-me-04: |
-  Kolejny projekt malutki ale dla mnie ważny bo to mój pierwszy projekt dla firmy ktura potrzebowała rozwiązania do monitorowania pracy strurza w firmie na 
-  rynku oczywiście było wiele rozwiązań ale ale wszystkie wymagały obsługi przez pracownika (czytniki do odbijania punktów konrolnych) wymaganie było takoe aby
-  system byl prosty w obsłudze i by struż nie mugł go obejść ani zepsuć (czytkik można upuścić na ziemię i może ulec uszkodzeniu) postanowiłem napisać aplikację.
-  Napisałęm program ktury obsługuje przełącznik dzwonkowy jako punkt kontroli obecności strurza w danym miejscu i czasie sporządzając raport dostępny w telefonie 
-  (w przeglądarce) z poza siedziby firmy. Program napisany w 2023 / 2024 działa i jest używany do dziś co jakiś czas usuwam drobne usterki.
-
+  Kolejny projekt malutki ale dla mnie ważny bo to mój pierwszy projekt dla firmy, która potrzebowała rozwiązania do monitorowania pracy stróża w firmie. Na 
+  rynku oczywiście było wiele rozwiązań ale wszystkie wymagały obsługi przez pracownika (czytniki do odbijania punktów kontrolnych) wymaganie było takie aby
+  system był prosty w obsłudze i by stróż nie mógł go obejść ani zepsuć (czytnik można upuścić na ziemię i może ulec uszkodzeniu). Postanowiłem napisać aplikację.
+  Napisałem program, który obsługuje przełącznik dzwonkowy jako punkt kontroli obecności stróża w danym miejscu i czasie sporządzając raport dostępny w telefonie 
+  (w przeglądarce) z poza siedziby firmy. Program napisany w 2023 / 2024 działa i jest używany do dziś.
 
 project-01:
   title: Sterowanie ogrzewaniem domu
   start-coding: Projekt rozpoczęty w 2015r.
   
   description-01: | 
-    Program napisałem na potrzeby własne służy mi do sterowania ogrzewaniem podłogowym w domu, oraz steruje dolotem powietrza do kominka w salonie
-    co pozwala na kontrolę temperatury w płaszczu wodnym w kominku który jest połączony z centralnym ogrzewaniem, program także przełącza zawór 3 drożny
+    Program napisałem na potrzeby własne. Służy mi on do sterowania ogrzewaniem podłogowym w domu oraz steruje dolotem powietrza do kominka w salonie.
+    Pozwala to na kontrolę temperatury w płaszczu wodnym w kominku, który jest połączony z centralnym ogrzewaniem. Program także przełącza zawór 3 drożny,
     który zmienia obieg wody w zależności od tego czy palimy w kominku czy w piecu tradycyjnym w kotłowni.
     Program pozwala na ustawienie temperatury w jednym pomieszczeniu (w salonie).
     Sterowanie odbywa się za pomocą zdalnego pulpitu w tablecie lub telefonie.
@@ -56,17 +55,17 @@ project-01:
     Jak widać na obrazku dane z kominka zostały dołożone do programu więc jak można się domyślać w planach rozbudowa.
 
   description-02: | 
-    Cały program napisany jest w języku Pascal w środowisku Delphi 7 z odrobiną html na potrzeby widoku z przeglądarki i javascript (logowanie).
-    Program działa na komputerze stacjonarnym z systemem Windows XP temperatury pobierane są za pomocą adapteru podpiętego do wejścia com do adapteru podpiąłem 
-    czujniki dallas ds18b20 które mają wbudowaną 16 bitową pamięć ram w której znajduje się unikalny nr id co pozwala na podpięcie do jednego portu com wiele czujników.
-    Program posiada także zabezpieczenie przed kopiowaniem pobiera numer seryjny płyty głównej przepuszcza go przez algorytm i sprawdza czy jest zgodny z podanym kluczem.
+    Cały program napisany jest w języku Pascal w środowisku Delphi 7 z odrobiną HTML na potrzeby widoku z przeglądarki i Javascript (logowanie).
+    Program działa na komputerze stacjonarnym z systemem Windows XP. Temperatury pobierane są za pomocą adapteru podpiętego do wejścia com do adapteru podpiąłem 
+    czujniki dallas ds18b20, które mają wbudowaną 16 bitową pamięć ram, w której znajduje się unikalny nr ID co pozwala na podpięcie do jednego portu com wiele czujników.
+    Program posiada także zabezpieczenie przed kopiowaniem. Pobiera on numer seryjny płyty głównej, przepuszcza go przez algorytm i sprawdza czy jest zgodny z podanym kluczem.
 
   description-03: |   
-    Początkowo z braku wiedzy jak w języku pascal odczytać dane z czujników posłużyłem się gotowym programem (Logtemp) który odczytywał dane z czujników i zapisywał 
+    Początkowo z braku wiedzy- jak w języku Pascal odczytać dane z czujników. Posłużyłem się gotowym programem (Logtemp), który odczytywał dane z czujników i zapisywał 
     je do pliku xml w odstępie czasowym co 3 minuty a mój program odczytywał te dane z pliku xml co 3 minuty i dokonywał obliczeń posługując się tabelą sporządzoną na podstawie
-    wykresu znalezionego w sieci który dostarczył mi dane jaka powinna być temperatura ogrzewania podłogowego w zależności od temperatury zewnętrznej.
-    Oba programy dodałem do auto startu komputera mój program po uruchomieniu posiadał specjalne kilkusekundowe opóźnienie ze względu na odczyt pliku xml by uniknąć kolizji z programem logtmp
-    W miarę wpływu czasu mój program się rozwijał i już sam odczytywał dane z czujników stawał się coraz bardziej samodzielny.
+    wykresu znalezionego w sieci, który dostarczył mi dane jaka powinna być temperatura ogrzewania podłogowego w zależności od temperatury zewnętrznej.
+    Oba programy dodałem do auto startu komputera. Mój program po uruchomieniu posiadał specjalne kilkusekundowe opóźnienie ze względu na odczyt pliku xml by uniknąć 
+    kolizji z programem logtmp. W miarę upływu czasu ulepszyłem mój program by sam odczytywał dane z czujników i stawał się coraz bardziej samodzielny.
 
 
 
@@ -95,6 +94,5 @@ licenses-title: Licencje i źródła
 licenses: |
   Wszystkie grafiki i ikony użyte na tej stronie zostały pobrane z ogólnodostępnych źródeł, które umożliwiają ich wykorzystanie w celach niekomercyjnych. 
   Ich prawa autorskie należą do oryginalnych twórców, a wykorzystanie odbywa się zgodnie z warunkami licencji udostępnionymi na stronach źródłowych.
-  Jeśli jesteś autorem któregokolwiek z użytych materiałów i masz pytania dotyczące ich wykorzystania, prosimy o kontakt.
-
+  Proszę o kontakt jeśli jesteś autorem któregokolwiek z użytych materiałów i masz pytania dotyczące ich wykorzystania.
 

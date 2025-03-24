@@ -7,71 +7,65 @@ contact: Contact
 projects: Project Review
 coder: Code with Mark
 intro: |
-  I am a junior programmer who wants to grow in the IT industry. On this page you will find my projects that I have created in the course of 
-  learning programming. I invite you to take a look at them.
+  I would like to grow in the IT industry. I am interested in the position of Junior Programmer. On this page you will find my projects that I have created while learning programming.
+  I invite you to familiarize yourself with them.
 
 programer: Junior Programmer
 technologies: 'Technologies:'
 about-me-01: |
-  My adventure with programming began in late 2015 / 2016 when I was looking for a solution to control the heating of the house.
+  My adventure with programming began in late 2015 / early 2016 when I was looking for a solution to control my home heating.
   There were ready-made solutions available on the market but they were available with the latest heating systems.
   I have an older generation heating system and could not find a suitable solution.
   I decided to write my own program that would meet my needs.
-  This program is still working today and is constantly being developed.
+  This program still works today and is constantly being developed.
 
 about-me-02: |
-  With time, more needs appeared and another project was created that made my life easier in my professional work, working as an international driver
-  I had seemingly simple but time-consuming duties writing reports of lists of entries and exits from each country (EU requirements) which I decided to automate
-  and I wrote an application that helped me with this and, by the way, kept track of work and rest times at a time when digital tachographs were just entering the market
+  Over time, more needs arose and another project was created that made my life easier in my professional work, working as an international driver
+  I had seemingly simple but time-consuming duties such as writing reports of lists of entries and exits from each country (EU requirements), which I decided to automate
+  and wrote an application that helped me with this and, by the way, kept track of work and rest times at a time when digital tachographs were just entering the market
   and everything had to be noted down manually in a notebook and still remember the time of work and rest in the last 28 days giving shortened weekly rests
   and many other duties that had to be fulfilled. I used this application from the beginning of 2016 until the end of 2024.
-  The program also has copy protection takes the serial number of the motherboard runs it through an algorithm and checks if it matches the one stored in the program.
 
 about-me-03: |
-  The next stage of the programming adventure was to start volunteering in what used to be a club now an association of radio communications enthusiasts.
-  At the club, I volunteered to help myself because the club's 10th anniversary was approaching and I wanted to help organize a graduation campaign to mark the occasion
-  The club needed a homepage where you could see information about the upcoming anniversary and graduation campaign, and a cluster 
+  The next step in the programming adventure was to start volunteering at what used to be a club now called the Association of Radio Communications Enthusiasts.
+  At the club, I volunteered to help myself because the club's 10th anniversary was approaching and I wanted to help organize a graduation campaign to mark the occasion.
+  The club needed a home page where information about the upcoming anniversary and graduation campaign could be seen, as well as a cluster 
   (a form for entering established communications and a mechanism for counting points for established communications) 
   initially, due to lack of time and knowledge, I quickly set up the site on a ready-made template to gain time to build the cluster and the mechanism for counting points
-  after the completion of the graduation campaign, I decided to write my own system for managing the club's website, and that's how the system was created,
-  which still works today and is being developed.
+  after the completion of the graduation campaign, I decided to write my own system for managing the club's website, and that's how the system was created, which still works today and is being developed.
 
 about-me-04: |
-  Another tiny project, but important to me because it was my first project for a company that needed a solution to monitor the work of a struc 
-  Of course, there were many solutions on the market, but all of them required handling by an employee (readers for reflecting control points).
-  system should be easy to use and the planer should not be able to bypass it or break it (readers can be dropped on the ground and can be damaged) I decided to write an application.
-  I wrote a program that operates a bell switch as a control point for the presence of the planer at a given place and time, producing a report available on the phone 
-  (in a browser) from off-site. The program written in 2023 / 2024 works and is used to this day every now and then I fix minor glitches.
-
-description-04: |
-
-
+  Another project tiny but important to me because this is my first project for a company that needed a solution to monitor the work of a watchman in the company. On the 
+  Of course, there were many solutions on the market, but all of them required operation by an employee (readers for bouncing checkpoints) the requirement was that the
+  system be easy to use and that the watchman could not bypass it or break it (the reader can be dropped on the ground and can be damaged). I decided to write an application.
+  I wrote a program that operates the bell switch as a checkpoint for the watchman's presence at a given place and time making a report available on the phone 
+  (in a browser) from off-site. The program written in 2023 / 2024 works and is still used today.
 
 project-01:
   title: Home heating control
   start-coding: The project started in 2017
  
   description-01: | 
-    The program I wrote for my own use is used to control the underfloor heating at home, and controls the air intake to the fireplace in the living room
-    which allows you to control the temperature in the water jacket in the fireplace, which is connected to the central heating, the program also switches the 3-way valve
-    which changes the water circulation depending on whether we are burning in the fireplace or in a traditional stove in the boiler room.
+    I wrote the program for my own use. It serves me to control the underfloor heating in the house and controls the air intake to the fireplace in the living room.
+    It allows me to control the temperature of the water jacket in the fireplace, which is connected to the central heating. The program also switches the 3-way valve,
+    which changes the water circulation depending on whether you are burning in the fireplace or in a traditional stove in the boiler room.
     The program allows you to set the temperature in one room (the living room).
-    The control is carried out via a remote desktop on a tablet or phone.
-    It is possible to view the temperature itself on a TV with an HTML viewer.
-    As you can see in the picture, data from the fireplace was added to the program so as you can guess in the plans for expansion.
+    It is controlled via a remote desktop on a tablet or phone.
+    It is possible to view the temperature itself on a TV with an HTML viewer. 
+    As you can see in the picture, the data from the fireplace was added to the program so as you can guess in the plans for expansion.
 
   description-02: | 
-    The whole program is written in Pascal in Delphi 7 environment with a bit of html for browser view and javascript (logging).
-    The program runs on a desktop computer running Windows XP temperatures are taken using an adapter plugged into a com input to the adapter I plugged in 
-    dallas ds18b20 sensors which have a built-in 16-bit ram memory with a unique id number, which allows to plug in many sensors to one com port.
-    The program also has copy protection it takes the serial number of the motherboard runs it through an algorithm and checks if it matches the given key.
+    The entire program is written in Pascal in the Delphi 7 environment with a bit of HTML for the browser view and Javascript (logging).
+    The program runs on a desktop computer running Windows XP. Temperatures are taken using an adapter plugged into the com input to the adapter I plugged in 
+    dallas ds18b20 sensors, which have a built-in 16-bit ram memory, which contains a unique ID number which allows multiple sensors to be plugged into one com port.
+    The program also has copy protection. It takes the serial number of the motherboard, runs it through an algorithm and checks if it matches the key provided.
 
   description-03: |
-    Initially, due to lack of knowledge of how to read data from sensors in Pascal language, I used a ready-made program (Logtemp) which read data from sensors and wrote them to an xml file every 
+    Initially, for lack of knowledge, how to read data from sensors in Pascal language. I used an off-the-shelf program (Logtemp) that read the data from the sensors and wrote them 
     them to an xml file at an interval of every 3 minutes and my program read this data from the xml file every 3 minutes and made calculations using a table made from a
-    chart found on the web, which provided me with data on what the temperature of the floor heating should be depending on the outside temperature.
-    Both programs I added to the auto start of the computer my program after starting had a special delay of a few seconds due to the reading of the xml file to avoid collision with the program logtmp
-    As time influenced, my program developed and already read the data from the sensors by itself became more and more independent.
+    chart found on the web, which provided me with data on what the floor heating temperature should be depending on the outside temperature.
+    I added both programs to the computer's auto start. My program, upon startup, had a special delay of a few seconds due to the reading of the xml file to avoid 
+    collision with the logtmp program. As time went on, I improved my program to read the data from the sensors by itself and became more independent.
 
   p1-01: Main program view
   p1-02: Temperature settings
@@ -92,8 +86,9 @@ project-01:
 more: read more
 licenses-title: licenses and sources
 licenses: |
-  All graphics and icons used on this site were downloaded from publicly available sources that allow their use for non-commercial purposes. 
+  All graphics and icons used on this site have been downloaded from publicly available sources that allow their use for non-commercial purposes. 
   Their copyrights belong to the original creators, and use is in accordance with the license terms provided on the source sites.
+  Please contact me if you are the author of any of the materials used and have questions about their use.
 
 
 
