@@ -1,17 +1,17 @@
 # messages.en.yaml
-home: "Home"
-about: "About"
-about-me-title: “A few words about me”
-my-projects: "Projects"
-contact: "Contact"
-projects: "Project Review"
-coder: "Code with Mark"
+home: Home
+about: About
+about-me-title: A few words about me
+my-projects: Projects
+contact: Contact
+projects: Project Review
+coder: Code with Mark
 intro: |
   I am a junior programmer who wants to grow in the IT industry. On this page you will find my projects that I have created in the course of 
   learning programming. I invite you to take a look at them.
 
-programer: "Junior Programmer"
-technologies: "Technologies:"
+programer: Junior Programmer
+technologies: 'Technologies:'
 about-me-01: |
   My adventure with programming began in late 2015 / 2016 when I was looking for a solution to control the heating of the house.
   There were ready-made solutions available on the market but they were available with the latest heating systems.
@@ -25,6 +25,7 @@ about-me-02: |
   and I wrote an application that helped me with this and, by the way, kept track of work and rest times at a time when digital tachographs were just entering the market
   and everything had to be noted down manually in a notebook and still remember the time of work and rest in the last 28 days giving shortened weekly rests
   and many other duties that had to be fulfilled. I used this application from the beginning of 2016 until the end of 2024.
+  The program also has copy protection takes the serial number of the motherboard runs it through an algorithm and checks if it matches the one stored in the program.
 
 about-me-03: |
   The next stage of the programming adventure was to start volunteering in what used to be a club now an association of radio communications enthusiasts.
@@ -42,12 +43,13 @@ about-me-04: |
   I wrote a program that operates a bell switch as a control point for the presence of the planer at a given place and time, producing a report available on the phone 
   (in a browser) from off-site. The program written in 2023 / 2024 works and is used to this day every now and then I fix minor glitches.
 
+description-04: |
 
 
 
 project-01:
-  title: "Home heating control"
-  start-coding: "The project started in 2017"
+  title: Home heating control
+  start-coding: The project started in 2017
  
   description-01: | 
     The program I wrote for my own use is used to control the underfloor heating at home, and controls the air intake to the fireplace in the living room
@@ -61,28 +63,38 @@ project-01:
   description-02: | 
     The whole program is written in Pascal in Delphi 7 environment with a bit of html for browser view and javascript (logging).
     The program runs on a desktop computer running Windows XP temperatures are taken using an adapter plugged into a com input to the adapter I plugged in 
-    dallas ds18b20 sensors which have a built-in 16 bit ram memory with a unique id number which allows to hook up multiple sensors to a single com port.
+    dallas ds18b20 sensors which have a built-in 16-bit ram memory with a unique id number, which allows to plug in many sensors to one com port.
+    The program also has copy protection it takes the serial number of the motherboard runs it through an algorithm and checks if it matches the given key.
 
   description-03: |
     Initially, due to lack of knowledge of how to read data from sensors in Pascal language, I used a ready-made program (Logtemp) which read data from sensors and wrote them to an xml file every 
-    them to an xml file at an interval of every 3 minutes and my program read the data from the xml file every 3 minutes and made calculations using a table made from the
-    chart that provided me with data on what the temperature of the floor heating should be depending on the outside temperature.
-    As time influenced, my program developed and was already reading sensor data on its own became more and more independent.
+    them to an xml file at an interval of every 3 minutes and my program read this data from the xml file every 3 minutes and made calculations using a table made from a
+    chart found on the web, which provided me with data on what the temperature of the floor heating should be depending on the outside temperature.
+    Both programs I added to the auto start of the computer my program after starting had a special delay of a few seconds due to the reading of the xml file to avoid collision with the program logtmp
+    As time influenced, my program developed and already read the data from the sensors by itself became more and more independent.
 
-  p1-01: “Main program view”
-  p1-02: “Temperature settings”
-  p1-03: “Information about the server”
-  p1-04: “Temperature graph”
-  p1-05: “View from browser login”
-  p1-06: “View from the browser temperature preview”
-  p1-07: “Report”
+  p1-01: Main program view
+  p1-02: Temperature settings
+  p1-03: Information about the server
+  p1-04: Temperature graph
+  p1-05: View from browser login
+  p1-06: View from the browser temperature preview
+  p1-07: Report
+  p1-08: Floor heating control
+  p1-09: LPT and COM ports used
+  p1-10: Controller
+  p1-11: Controlling the air intake for the fireplace
+  p1-12: Control of three-way valve 
+  tech: technical issues
+  repo: Link to repository
 
 
+more: read more
+licenses-title: licenses and sources
+licenses: |
+  All graphics and icons used on this site were downloaded from publicly available sources that allow their use for non-commercial purposes. 
+  Their copyrights belong to the original creators, and use is in accordance with the license terms provided on the source sites.
 
-
-
-
-link-001: “Link to repository”
-right: "All rights reserved."
+right: All rights reserved.
 
 

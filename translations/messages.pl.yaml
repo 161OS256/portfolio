@@ -1,17 +1,17 @@
 # messages.pl.yaml
-home: "Strona Główna"
-about: "O mnie"
-about-me-title: "Kilka słów o mnie"
-my-projects: "Projekty"
-contact: "Kontakt"
-projects: "Przegląd Projektów"
-coder: "Koduj z Markiem"
+home: Strona Główna
+about: O mnie
+about-me-title: Kilka słów o mnie
+my-projects: Projekty
+contact: Kontakt
+projects: Przegląd Projektów
+coder: Koduj z Markiem
 intro: |
   Jestem młodszym programistą, który chce się rozwijać w branży IT. Na tej stronie znajdziesz moje projekty, które stworzyłem w ramach nauki programowania.
   Zapraszam do zapoznania się z nimi.
 
-programer: "Młodszy Programista"
-technologies: "Technologie:"
+programer: Młodszy Programista
+technologies: 'Technologie:'
 about-me-01: |
   Moja przygoda z programowaniem zaczęła się na przełomie 2015 / 2016 roku gdy szukałem rozwiązania do sterowania ogrzewaniem domu.
   na rynku były dostępne gotowe rozwiązania ale były one dostępne wraz z najnowszymi systemami grzewczymi.
@@ -43,8 +43,8 @@ about-me-04: |
 
 
 project-01:
-  title: "Sterowanie ogrzewaniem domu"
-  start-coding: "Projekt rozpoczęty w 2015r."
+  title: Sterowanie ogrzewaniem domu
+  start-coding: Projekt rozpoczęty w 2015r.
   
   description-01: | 
     Program napisałem na potrzeby własne służy mi do sterowania ogrzewaniem podłogowym w domu, oraz steruje dolotem powietrza do kominka w salonie
@@ -59,27 +59,44 @@ project-01:
     Cały program napisany jest w języku Pascal w środowisku Delphi 7 z odrobiną html na potrzeby widoku z przeglądarki i javascript (logowanie).
     Program działa na komputerze stacjonarnym z systemem Windows XP temperatury pobierane są za pomocą adapteru podpiętego do wejścia com do adapteru podpiąłem 
     czujniki dallas ds18b20 które mają wbudowaną 16 bitową pamięć ram w której znajduje się unikalny nr id co pozwala na podpięcie do jednego portu com wiele czujników.
+    Program posiada także zabezpieczenie przed kopiowaniem pobiera numer seryjny płyty głównej przepuszcza go przez algorytm i sprawdza czy jest zgodny z podanym kluczem.
 
   description-03: |   
     Początkowo z braku wiedzy jak w języku pascal odczytać dane z czujników posłużyłem się gotowym programem (Logtemp) który odczytywał dane z czujników i zapisywał 
     je do pliku xml w odstępie czasowym co 3 minuty a mój program odczytywał te dane z pliku xml co 3 minuty i dokonywał obliczeń posługując się tabelą sporządzoną na podstawie
-    wykresu który dostarczył mi dane jaka powinna być temperatura ogrzewania podłogowego w zależności od temperatury zewnętrznej.
+    wykresu znalezionego w sieci który dostarczył mi dane jaka powinna być temperatura ogrzewania podłogowego w zależności od temperatury zewnętrznej.
+    Oba programy dodałem do auto startu komputera mój program po uruchomieniu posiadał specjalne kilkusekundowe opóźnienie ze względu na odczyt pliku xml by uniknąć kolizji z programem logtmp
     W miarę wpływu czasu mój program się rozwijał i już sam odczytywał dane z czujników stawał się coraz bardziej samodzielny.
 
-  description-04: |
-    opisz o zbezpieczeniach przed kradzieżą 
-
-  p1-01: "Widok główny programu"
-  p1-02: "Ustawienia temperatury"
-  p1-03: "Informacje o serwerze"
-  p1-04: "Wykres temperatur"
-  p1-05: "Widok z przeglądarki logowanie"
-  p1-06: "Widok z przeglądarki podgląd temperatur"
-  p1-07: "Raport"
-  
 
 
-link-001: "Link do repozytorium"
-right: "Wszelkie prawa zastrzeżone.."
+  p1-01: Widok główny programu
+  p1-02: Ustawienia temperatury
+  p1-03: Informacje o serwerze
+  p1-04: Wykres temperatur
+  p1-05: Widok z przeglądarki logowanie
+  p1-06: Widok z przeglądarki podgląd temperatur
+  p1-07: Raport
+  p1-08: Sterowanie ogrzewaniem podłogowym
+  p1-09: Wykorzystane porty LPT oraz COM
+  p1-10: Sterownik
+  p1-11: Sterowanie dolotem powietrza do kominka
+  p1-12: Sterowanie zaworem trójdzielnym 
+  tech: Kwestie techniczne
+
+  repo: Link do repozytorium
+
+
+
+
+
+more: Czytaj więcej
+licenses-title: Licencje i źródła
+licenses: |
+  Wszystkie grafiki i ikony użyte na tej stronie zostały pobrane z ogólnodostępnych źródeł, które umożliwiają ich wykorzystanie w celach niekomercyjnych. 
+  Ich prawa autorskie należą do oryginalnych twórców, a wykorzystanie odbywa się zgodnie z warunkami licencji udostępnionymi na stronach źródłowych.
+  Jeśli jesteś autorem któregokolwiek z użytych materiałów i masz pytania dotyczące ich wykorzystania, prosimy o kontakt.
+
+right: Wszelkie prawa zastrzeżone.
 
 

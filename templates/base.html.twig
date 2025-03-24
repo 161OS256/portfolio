@@ -7,6 +7,9 @@
 
         {% block stylesheets %}
            {{ encore_entry_link_tags('app') }}
+           <link rel="stylesheet" href="{{ asset('fontello/fontello.css') }}" type="text/css" />
+           
+
         {% endblock %}
 
         {% block javascripts %}
@@ -15,7 +18,9 @@
     </head>
     <body>
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-custom">
+        <a id="top"></a>
+
+            <nav class="navbar navbar-expand-lg navbar-custom navbar-fixed">
                 <a class="navbar-brand fw-bold" href="/{{current_locale}}">{{ 'programer'| trans }}</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,20 +55,87 @@
         
             </nav>
 
-            <br><br>
-                {% for message in app.flashes('notice') %}
-                    <div class="notice">
-                        {{ message }}
-                    </div>
-                {% endfor %}
-
-                {% block body %}{% endblock %}
- </div>
-            <footer class="footer mt-5">
-                <div class="container text-center">
-                    <p>&copy; 2025 Marek Bartocha. {{ 'right'| trans }}</p>
+        <br><br>
+            {% for message in app.flashes('notice') %}
+                <div class="notice">
+                    {{ message }}
                 </div>
-            </footer>
-       
+                    {% endfor %}
+
+                    {% block body %}{% endblock %}
+                </div>
+        <footer class="footer mt-5">
+            <div class="container text-center mb-4">
+                <span>
+                    &copy; 2025 Marek Bartocha. {{ 'right'| trans }}
+                </span>
+                <a href="/{{current_locale}}/licenses"> Licencje i źródła</a>
+                <br>
+            </div>
+        </footer>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                let backToTop = document.getElementById("backToTop");
+                let scrollTimeout;
+
+                function checkScroll() {
+                    clearTimeout(scrollTimeout);
+
+                    if (window.scrollY > 100) {
+                        scrollTimeout = setTimeout(function () {
+                            backToTop.classList.add("show");
+                        }, 500); 
+                    } else {
+                        backToTop.classList.remove("show");
+                    }
+                }
+
+                window.addEventListener("scroll", checkScroll);
+
+                function scrollToTop(duration) {
+                    let start = window.scrollY;
+                    let startTime = performance.now();
+
+                    function animateScroll(currentTime) {
+                        let elapsedTime = currentTime - startTime;
+                        let progress = Math.min(elapsedTime / duration, 1);
+
+                        let easeOut = 1 - Math.pow(1 - progress, 3);
+
+                        window.scrollTo(0, start * (1 - easeOut));
+
+                        if (elapsedTime < duration) {
+                            requestAnimationFrame(animateScroll);
+                        }
+                    }
+
+                    requestAnimationFrame(animateScroll);
+                }
+                
+                backToTop.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        scrollToTop(800);
+                    });
+            });
+
+            
+            document.addEventListener("DOMContentLoaded", function () {
+                let readMore = document.getElementById("readMore");
+                let moreText = document.getElementById("moreText");
+
+                readMore.addEventListener("click", function (event) {
+                    event.preventDefault(); 
+                    if (moreText.classList.contains("hidden")) {
+                        moreText.classList.remove("hidden");
+                        readMore.textContent = "Czytaj mniej"; 
+                    } else {
+                        moreText.classList.add("hidden");
+                        readMore.textContent = "Czytaj więcej";
+                    }
+                });
+            });
+        </script>
+        <a href="#top" id="backToTop" class="back-to-top"><i class="icon-up-big"></i></a>
     </body>
 </html>
