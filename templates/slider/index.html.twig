@@ -1,0 +1,80 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+<style>
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+    align-items: center;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.buttonslider {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+img {
+    max-width: 700px;
+    max-height: 700px;
+}
+</style>
+
+<div class="slider-container">
+    <div class="slider" id="slider">
+    {% set i = id %}
+
+        {% for i in 1..12 %}
+
+            {% set id = (id < 10) ? '0' ~ id : id %}
+        
+            <div class="slide text-center">
+                 <a href="{{ asset('img/p1-' ~ id ~ '.png') }}"><img src="{{ asset('img/p1-' ~ id ~ '.png') }}" alt="Obrazek"></a>
+                <center>{{('pascal-page.img-'~ id)|trans}}</center>
+            </div>
+            {% set id = (id + 1) %}
+
+            {% if id > 12 %}
+                {% set id = 01 %}
+            {% endif %}
+
+        {% endfor %}
+    </div>
+   
+    <button class="prev buttonslider" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next buttonslider" onclick="changeSlide(1)">&#10095;</button>
+</div>
+{% endblock %}

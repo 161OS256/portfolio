@@ -70,17 +70,17 @@ pascal-page:
     kolizji z programem logtmp. W miarę upływu czasu ulepszyłem mój program by sam odczytywał dane z czujników i stawał się coraz bardziej samodzielny.
 
   img-01: Widok główny programu
-  img-02: Ustawienia temperatury
-  img-03: Informacje o serwerze
-  img-04: Wykres temperatur
-  img-05: Widok z przeglądarki logowanie
-  img-06: Widok z przeglądarki podgląd temperatur
-  img-07: Raport
-  img-08: Sterowanie ogrzewaniem podłogowym
+  img-02: Widok z przeglądarki podgląd temperatur
+  img-03: Ustawienia temperatury
+  img-04: Widok z przeglądarki logowanie
+  img-05: Raport
+  img-06: Wykres temperatur 
+  img-07: Informacje o serwerze 
+  img-08: Sterowanie zaworem trójdzielnym
   img-09: Wykorzystane porty LPT oraz COM
   img-10: Sterownik
   img-11: Sterowanie dolotem powietrza do kominka
-  img-12: Sterowanie zaworem trójdzielnym 
+  img-12: Sterowanie ogrzewaniem podłogowym  
   technical: Kwestie techniczne
   repo: Link do repozytorium
 

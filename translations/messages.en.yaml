@@ -70,17 +70,17 @@ pascal-page:
     collision with the logtmp program. As time went on, I improved my program to read the data from the sensors by itself and became more independent.
 
   img-01: Main program view
-  img-02: Temperature settings
-  img-03: Information about the server
-  img-04: Temperature graph
-  img-05: View from browser login
-  img-06: View from the browser temperature preview
-  img-07: Report
-  img-08: Floor heating control
+  img-02: View from the browser temperature preview 
+  img-03: Temperature settings
+  img-04: View from browser login 
+  img-05: Report 
+  img-06: Temperature graph 
+  img-07: Information about the server 
+  img-08: Control of three-way valve 
   img-09: LPT and COM ports used
   img-10: Controller
   img-11: Controlling the air intake for the fireplace
-  img-12: Control of three-way valve 
+  img-12: Floor heating control 
   technical: technical issues
   repo: Link to repository
 
