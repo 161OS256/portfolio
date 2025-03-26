@@ -107,3 +107,16 @@ wolontariat-page:
 workcontroll-page:
   title: Monitorowanie pracy stróża w firmie
   title-nav: Monitorowanie pracy stróża
+  start-coding: Projekt rozpoczęty w 2024r.
+
+portfolio-page:
+  title: Krótkie informacje o tej stronie 
+  title-nav: Informacje o tej stronie 
+  start-coding: Projekt rozpoczęty w 2025r.
+  description-01: |
+    Projekt stworzony w Symfony (w wersji 6.4.19). 
+    Aplikacja opiera się na wzorcu MVC i korzysta z szablonów Twig do renderowania widoków. 
+  description-02: |
+    Frontend – Bootstrap: W projekcie wykorzystałem Bootstrap do budowy responsywnych i estetycznych interfejsów użytkownika.
+    Dzięki Bootstrapowi aplikacja dostosowuje się do różnych rozmiarów ekranów,
+    co zapewnia optymalne doświadczenie na urządzeniach mobilnych, tabletach i komputerach stacjonarnych. 

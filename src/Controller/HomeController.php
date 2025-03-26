@@ -38,6 +38,11 @@ class HomeController extends AbstractController
                 'route' => 'workcontroll',
                 'using' => 'Pascal, HTML, CSS',
             ],
+            'portfolio' => [
+                'route' => 'portfolio',
+                'using' => 'Symfony',
+            ],
+
         ];
 
         // Przekazanie do szablonu

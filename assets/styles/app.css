@@ -135,6 +135,10 @@ img {
     text-decoration: underline;
 }
 
+.title {
+    color: #42b932;
+}
+
 @media screen and (max-width: 768px) {
 .intro {
     padding: 0;

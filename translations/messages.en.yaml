@@ -106,3 +106,16 @@ wolontariat-page:
 workcontroll-page:
   title: Monitoring the watchman's work in the company
   title-nav: Monitoring the watchman's work
+  start-coding: Project started in 2024.
+
+portfolio-page:
+  title: Brief information about this site 
+  title-nav: Information about this site
+  start-coding: Project started in 2025.
+  description-01: |
+    A project created in Symfony (version 6.4.19). 
+    The application is based on the MVC pattern and uses Twig templates to render views. 
+  description-02: |
+    Frontend - Bootstrap: In the project I used Bootstrap to build responsive and aesthetically pleasing user interfaces.
+    Thanks to Bootstrap, the app adapts to different screen sizes,
+    which provides an optimal experience on mobile devices, tablets and desktops. 
