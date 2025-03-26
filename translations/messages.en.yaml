@@ -43,7 +43,7 @@ about-page:
     I wrote a program that operates the bell switch as a checkpoint for the watchman's presence at a given place and time making a report available on the phone 
     (in a browser) from off-site. The program written in 2023 / 2024 works and is still used today.
 
-pascal-page:
+p1-page:
   title: Home heating control.
   title-nav: Home heating
   start-coding: The project started in 2015
@@ -70,20 +70,29 @@ pascal-page:
     I added both programs to the computer's auto start. My program, upon startup, had a special delay of a few seconds due to the reading of the xml file to avoid 
     collision with the logtmp program. As time went on, I improved my program to read the data from the sensors by itself and became more independent.
 
-  img-01: Main program view
-  img-02: View from the browser temperature preview 
-  img-03: Temperature settings
-  img-04: View from browser login 
-  img-05: Report 
-  img-06: Temperature graph 
-  img-07: Information about the server 
-  img-08: Control of three-way valve 
-  img-09: LPT and COM ports used
-  img-10: Controller
-  img-11: Controlling the air intake for the fireplace
-  img-12: Floor heating control 
+  p1-1: Main program view
+  p1-2: View from the browser temperature preview 
+  p1-3: Temperature settings
+  p1-4: View from browser login 
+  p1-5: Report 
+  p1-6: Temperature graph 
+  p1-7: Information about the server 
+
+  p1a-1: LPT and COM ports used
+  p1a-2: Controller
+  p1a-3: Controlling the air intake for the fireplace
+  p1a-4: Control of three-way valve 
+  p1a-5: Floor heating control 
+
   technical: technical issues
   repo: Link to repository
+
+p1a-page:
+  p1a-1: LPT and COM ports used
+  p1a-2: Controller
+  p1a-3: Controlling the air intake for the fireplace
+  p1a-4: Control of three-way valve 
+  p1a-5: Floor heating control 
 
 
 
@@ -94,21 +103,40 @@ licenses-page:
     Please contact me if you are the author of any of the materials used and have questions about their use.
   licenses-sources: Sources
 
-workorganizer-page:
+p2-page:
   title: Organizer of work ne own needs.
   title-nav: Organizer of the work
+  start-coding: The project started in 2016r.
 
-wolontariat-page:
+  description-01: | 
+    When writing this app in 2016 I didn't know much about object-oriented so the app still written structurally. 
+    At the end of 2024 I stopped using this application with the end of my driving career.
+    In spite of appearances it was quite extensive many tabs and functionality. The main goal of the project was to build a smart ala notepad. 
+    So that during the day I could enter relevant annotations one by one. The essence of the matter was for the application to fulfill its role. Frontend issues 
+    were not the most important because the application was only for personal use. 
+
+  description-02: | 
+
+  p2-1: Main view of the application
+
+
+
+
+
+
+
+
+p3-page:
   title: Volunteer Association
   title-nav: Volunteer Association
   start-coding: Project started in 2020.
 
-workcontroll-page:
+p4-page:
   title: Monitoring the watchman's work in the company
   title-nav: Monitoring the watchman's work
   start-coding: Project started in 2024.
 
-portfolio-page:
+p5-page:
   title: Brief information about this site 
   title-nav: Information about this site
   start-coding: Project started in 2025.

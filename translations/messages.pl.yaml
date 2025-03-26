@@ -77,8 +77,7 @@ p1-page:
   p1-4: Widok z przeglądarki logowanie
   p1-5: Raport
   p1-6: Wykres temperatur 
-  p1-7: Informacje o serwerze 
-
+  p1-7: Informacje o serwerze
   p1a-1: Wykorzystane porty LPT oraz COM
   p1a-2: Sterownik
   p1a-3: Sterowanie dolotem powietrza do kominka
@@ -88,6 +87,15 @@ p1-page:
   technical: Kwestie techniczne
   repo: Link do repozytorium
 
+  
+p1a-page:
+  p1a-1: Wykorzystane porty LPT oraz COM
+  p1a-2: Sterownik
+  p1a-3: Sterowanie dolotem powietrza do kominka
+  p1a-4: Sterowanie zaworem trójdzielnym 
+  p1a-5: Sterowanie ogrzewaniem podłogowym  
+
+ 
 licenses-page:
   licenses: |
     Wszystkie grafiki i ikony użyte na tej stronie zostały pobrane z ogólnodostępnych źródeł, które umożliwiają ich wykorzystanie w celach niekomercyjnych. 
@@ -101,12 +109,14 @@ p2-page:
   start-coding: Projekt rozpoczęty w 2016r.
   
   description-01: | 
-    Pisząc tą aplikację w 2016r nie wiele wiedziałem o objektowości więc aplikacja naisana jedzcze strukturalnie. 
+    Pisząc tą aplikację w 2016r nie wiele wiedziałem o obiektowości więc aplikacja napisana jeszcze strukturalnie. 
     Z końcem 2024 zaprzestałem używania tej aplikacji wraz z końcem kariery kierowcy.
-
+    W brew pozorom była dosyć rozbudowana wiele kart i funkcjonalności. Głównym celem projektu było zbudowanie inteligentnego ala notatnika. 
+    Aby w ciągu dnia wprowadzać kolejno istotne adnotacje. Istotą sprawy było to by aplikacja spełniała swoją rolę. Kwestie frontendowe 
+    nie były najważniejsze ponieważ aplikacja była tylko na potrzeby własne. 
   description-02: | 
-    W brew pozorom byla dosyć rozbudowana wiele kart i funkcjonalności. Głównym celem projektu było zbubowanie inteligentnego ala notatnika. 
-    Aby w ciągu dnia wprowadzać kolejno istotne adnotacje, takie jak np. rozpoczęcie pracy. //src2
+   
+
 
   p2-1: Widok główny aplikacji
 
