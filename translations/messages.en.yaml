@@ -10,7 +10,7 @@ home-page:
   licenses-title: licenses and sources
   more: Read more
   less: Read less
-  technologies: 'Technologies:'
+  technologies: Technologies Used
 
 about-page:
   title: A few words about me
@@ -44,7 +44,8 @@ about-page:
     (in a browser) from off-site. The program written in 2023 / 2024 works and is still used today.
 
 pascal-page:
-  title: Home heating control
+  title: Home heating control.
+  title-nav: Home heating
   start-coding: The project started in 2015
  
   description-01: | 
@@ -94,4 +95,14 @@ licenses-page:
   licenses-sources: Sources
 
 workorganizer-page:
-  title: Organizer of the work of the driver ne own needs
+  title: Organizer of work ne own needs.
+  title-nav: Organizer of the work
+
+wolontariat-page:
+  title: Volunteer Association
+  title-nav: Volunteer Association
+  start-coding: Project started in 2020.
+
+workcontroll-page:
+  title: Monitoring the watchman's work in the company
+  title-nav: Monitoring the watchman's work

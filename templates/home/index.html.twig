@@ -10,13 +10,48 @@
     <div class="row">
         <div class="col-12 col-md-4 col-lg-4">
             <a href="{{ path('pascal_index')}}">
-            <img src="{{ asset('img/p1-01.png') }}" class="img-fluid rounded-lg" alt="Obrazek">
+            <img src="{{ asset('img/p1-02.png') }}" class="img-fluid rounded-lg home-img" alt="Obrazek">
             </a>
             <p class="text-gray-700 font-bold py-0 text-center">
                 {{'pascal-page.title' |trans}}<br>
-                {{projects.project1.using}}<br>
+                {{'home-page.technologies' |trans}}<br>
+                {{projects.pascal.using}}<br>
+                {{'pascal-page.start-coding' |trans}} 
+            </p>   
+        </div>
+ 
+        <div class="col-12 col-md-4 col-lg-4">
+            <a href="{{ path('workorganizer_index')}}">
+            <img src="{{ asset('img/p2-01.png') }}" class="img-fluid rounded-lg home-img" alt="Obrazek">
+            </a>
+            <p class="text-gray-700 font-bold py-0 text-center">
+                {{'workorganizer-page.title' |trans}}<br>
+                 {{'home-page.technologies' |trans}}<br>
+                {{projects.workorganizer.using}}<br>
                 {{'pascal-page.start-coding' |trans}}
             </p>   
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-4">
+            <a href="{{ path('wolontariat_index')}}">
+            <img src="{{ asset('img/p3-01.png') }}" class="img-fluid rounded-lg home-img" alt="Obrazek">
+            </a>
+            <p class="text-gray-700 font-bold py-0 text-center">
+                {{'wolontariat-page.title' |trans}}<br>
+                 {{'home-page.technologies' |trans}}<br>
+                {{projects.wolontariat.using}}<br>
+                {{'wolontariat-page.start-coding' |trans}}
+            </p>   
+        </div>
+
+        <div class="col-12">
+            <ul>
+                <li>
+                    <p>
+                        <a href="{{ path('workcontroll_index')}}">{{'workcontroll-page.title' |trans}}</a>
+                    </p>
+                </li>
+            </ul>
         </div>
     </div>
 

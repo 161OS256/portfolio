@@ -3,6 +3,12 @@ body {
     color: #2f372e;
     padding-top: 60px; 
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
 .navbar-custom .navbar-brand,
@@ -45,16 +51,6 @@ p {
     padding: 15px;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
 .container {
     flex: 1; 
 }
@@ -74,6 +70,10 @@ img {
     height: auto;
     padding: 25px;
     border-radius: 35px; 
+}
+
+.home-img {
+    height: 270px;
 }
 
 .back-to-top {
@@ -139,4 +139,4 @@ img {
 .intro {
     padding: 0;
     }
-}
+} 

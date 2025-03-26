@@ -10,7 +10,8 @@ home-page:
   licenses-title: Licencje i źródła
   more: Czytaj więcej
   less: Czytaj mniej
-  technologies: 'Technologie:'
+  technologies: Wykorzystane Technologie
+  
 
 about-page:
   title: Kilka słów o mnie
@@ -44,7 +45,8 @@ about-page:
     (w przeglądarce) z poza siedziby firmy. Program napisany w 2023 / 2024 działa i jest używany do dziś.
 
 pascal-page:
-  title: Sterowanie ogrzewaniem domu
+  title: Sterowanie ogrzewaniem domu.
+  title-nav: Sterowanie ogrzewaniem
   start-coding: Projekt rozpoczęty w 2015r.
   
   description-01: | 
@@ -92,7 +94,16 @@ licenses-page:
   licenses-sources: Źródła
 
 workorganizer-page:
-  title: Organizator pracy kierowcy ne potrzeby własne
+  title: Organizator pracy ne potrzeby własne.
+  title-nav: Organizator pracy
+  description-01: | 
+    
+  
+wolontariat-page:
+  title: Wolontariat w Stowarzyszenieiu
+  title-nav: Wolontariat Stowarzyszenie
+  start-coding: Projekt rozpoczęty w 2020r.
 
-  
-  
+workcontroll-page:
+  title: Monitorowanie pracy stróża w firmie
+  title-nav: Monitorowanie pracy stróża
