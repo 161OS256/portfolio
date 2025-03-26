@@ -8,14 +8,16 @@ use Symfony\Component\Routing\Attribute\Route;
 
 final class SliderController extends AbstractController
 {
-    #[Route('/{_locale}/slider/{id}', name: 'slider_index', requirements: ['_locale' => 'en|pl'])]
-    public function index(string $_locale, int $id): Response
+    #[Route('/{_locale}/slider/{folder}/{number}/{id}', name: 'slider_index', requirements: ['_locale' => 'en|pl'])]
+    public function index(string $_locale, string $folder, int $number, int $id): Response
     {
         
         return $this->render('slider/index.html.twig', [
             'controller_name' => 'SliderController',
             'current_locale' => $_locale,
             'site' => 'slider',
+            'folder' => $folder,
+            'number' => $number,
             'id' => $id,
         ]);
     }

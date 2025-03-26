@@ -22,23 +22,23 @@ class HomeController extends AbstractController
 
         // Tablica projektów puzniej pociącnę to z bazy gdy będzie więcej projektów
         $projects = [
-            'pascal' => [
+            'p1' => [
                 'route' => 'pascal',
                 'using' => 'Pascal, HTML, CSS, JavaScript',
             ],
-            'workorganizer' => [
+            'p2' => [
                 'route' => 'workorganizer',
                 'using' => 'PHP, HTML, CSS, JavaScript, MySql',
             ],
-            'wolontariat' => [
+            'p3' => [
                 'route' => 'wolontariat',
                 'using' => 'PHP, HTML, CSS, JavaScript, MySql',
             ],
-            'workcontroll' => [
+            'p4' => [
                 'route' => 'workcontroll',
                 'using' => 'Pascal, HTML, CSS',
             ],
-            'portfolio' => [
+            'p5' => [
                 'route' => 'portfolio',
                 'using' => 'Symfony',
             ],

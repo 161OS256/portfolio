@@ -57,18 +57,15 @@ img {
     <div class="slider" id="slider">
     {% set i = id %}
 
-        {% for i in 1..12 %}
-
-            {% set id = (id < 10) ? '0' ~ id : id %}
-        
+        {% for i in 1.. number %}
             <div class="slide text-center">
-                 <a href="{{ asset('img/p1-' ~ id ~ '.png') }}"><img src="{{ asset('img/p1-' ~ id ~ '.png') }}" alt="Obrazek"></a>
-                <center>{{('pascal-page.img-'~ id)|trans}}</center>
+                 <a href="{{ asset('img/'~ folder ~'/' ~ id ~ '.png') }}"><img src="{{ asset('img/'~ folder ~'/' ~ id ~ '.png') }}" alt="Obrazek"></a>
+                <center>{{(folder ~'-page.'~ folder ~'-'~ id)|trans}}</center>
             </div>
             {% set id = (id + 1) %}
 
-            {% if id > 12 %}
-                {% set id = 01 %}
+            {% if id > number %}
+                {% set id = 1 %}
             {% endif %}
 
         {% endfor %}

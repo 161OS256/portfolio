@@ -44,7 +44,7 @@ about-page:
     Napisałem program, który obsługuje przełącznik dzwonkowy jako punkt kontroli obecności stróża w danym miejscu i czasie sporządzając raport dostępny w telefonie 
     (w przeglądarce) z poza siedziby firmy. Program napisany w 2023 / 2024 działa i jest używany do dziś.
 
-pascal-page:
+p1-page:
   title: Sterowanie ogrzewaniem domu.
   title-nav: Sterowanie ogrzewaniem
   start-coding: Projekt rozpoczęty w 2015r.
@@ -71,18 +71,20 @@ pascal-page:
     Oba programy dodałem do auto startu komputera. Mój program po uruchomieniu posiadał specjalne kilkusekundowe opóźnienie ze względu na odczyt pliku xml by uniknąć 
     kolizji z programem logtmp. W miarę upływu czasu ulepszyłem mój program by sam odczytywał dane z czujników i stawał się coraz bardziej samodzielny.
 
-  img-01: Widok główny programu
-  img-02: Widok z przeglądarki podgląd temperatur
-  img-03: Ustawienia temperatury
-  img-04: Widok z przeglądarki logowanie
-  img-05: Raport
-  img-06: Wykres temperatur 
-  img-07: Informacje o serwerze 
-  img-08: Sterowanie zaworem trójdzielnym
-  img-09: Wykorzystane porty LPT oraz COM
-  img-10: Sterownik
-  img-11: Sterowanie dolotem powietrza do kominka
-  img-12: Sterowanie ogrzewaniem podłogowym  
+  p1-1: Widok główny programu
+  p1-2: Widok z przeglądarki podgląd temperatur
+  p1-3: Ustawienia temperatury
+  p1-4: Widok z przeglądarki logowanie
+  p1-5: Raport
+  p1-6: Wykres temperatur 
+  p1-7: Informacje o serwerze 
+
+  p1a-1: Wykorzystane porty LPT oraz COM
+  p1a-2: Sterownik
+  p1a-3: Sterowanie dolotem powietrza do kominka
+  p1a-4: Sterowanie zaworem trójdzielnym 
+  p1a-5: Sterowanie ogrzewaniem podłogowym  
+
   technical: Kwestie techniczne
   repo: Link do repozytorium
 
@@ -93,23 +95,40 @@ licenses-page:
     Proszę o kontakt jeśli jesteś autorem któregokolwiek z użytych materiałów i masz pytania dotyczące ich wykorzystania.
   licenses-sources: Źródła
 
-workorganizer-page:
+p2-page:
   title: Organizator pracy ne potrzeby własne.
   title-nav: Organizator pracy
-  description-01: | 
-    
+  start-coding: Projekt rozpoczęty w 2016r.
   
-wolontariat-page:
+  description-01: | 
+    Pisząc tą aplikację w 2016r nie wiele wiedziałem o objektowości więc aplikacja naisana jedzcze strukturalnie. 
+    Z końcem 2024 zaprzestałem używania tej aplikacji wraz z końcem kariery kierowcy.
+
+  description-02: | 
+    W brew pozorom byla dosyć rozbudowana wiele kart i funkcjonalności. Głównym celem projektu było zbubowanie inteligentnego ala notatnika. 
+    Aby w ciągu dnia wprowadzać kolejno istotne adnotacje, takie jak np. rozpoczęcie pracy. //src2
+
+  p2-1: Widok główny aplikacji
+
+
+
+
+
+
+
+
+  
+p3-page:
   title: Wolontariat w Stowarzyszenieiu
   title-nav: Wolontariat Stowarzyszenie
   start-coding: Projekt rozpoczęty w 2020r.
 
-workcontroll-page:
+p4-page:
   title: Monitorowanie pracy stróża w firmie
   title-nav: Monitorowanie pracy stróża
   start-coding: Projekt rozpoczęty w 2024r.
 
-portfolio-page:
+p5-page:
   title: Krótkie informacje o tej stronie 
   title-nav: Informacje o tej stronie 
   start-coding: Projekt rozpoczęty w 2025r.
@@ -120,3 +139,5 @@ portfolio-page:
     Frontend – Bootstrap: W projekcie wykorzystałem Bootstrap do budowy responsywnych i estetycznych interfejsów użytkownika.
     Dzięki Bootstrapowi aplikacja dostosowuje się do różnych rozmiarów ekranów,
     co zapewnia optymalne doświadczenie na urządzeniach mobilnych, tabletach i komputerach stacjonarnych. 
+
+  
