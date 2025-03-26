@@ -7,15 +7,15 @@ body {
 
 .navbar-custom .navbar-brand,
 .navbar-custom .nav-link {
-    color: #c8ced4  !important; /* Biały kolor tekstu */
+    color: #c8ced4  !important; 
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: #fff !important; /* Biały kolor tekstu */
+    color: #fff !important; 
 }
  
 .navbar-custom .nav-link:hover {
-    color: #fff !important; /* Jaśniejszy kolor po najechaniu */
+    color: #fff !important; 
 }
 
 .dropdown-menu {
@@ -29,15 +29,11 @@ body {
 
 .dropdown-menu :hover {
     background-color:  rgb(104, 109, 103);
-    color: #c8ced4 !important; /* Jaśniejszy kolor po najechaniu */
+    color: #c8ced4 !important;
 }
 
 .btn-language {
     border-radius: 20px;
-}
-
-.row {
-    /* padding: 20px; */
 }
 
 .intro {
@@ -60,12 +56,11 @@ body {
 }
 
 .container {
-    flex: 1;  /* To powoduje, że kontener będzie rozciągał się na całą dostępną przestrzeń */
-    /* padding: 20px; */
+    flex: 1; 
 }
 
 .footer {
-    margin-top: auto;  /* Dzięki temu stopka będzie zawsze na dole */
+    margin-top: auto; 
     background-color: rgb(87, 92, 87);
 }
 
@@ -76,7 +71,6 @@ a {
 
 img {
     width: 100%;
-    /* max-width: 500px; */
     height: auto;
     padding: 25px;
     border-radius: 35px; 
@@ -88,7 +82,6 @@ img {
     right: 20px;
     width: 50px;
     height: 50px;
-    
     color: white;
     text-align: center;
     line-height: 50px;
@@ -133,7 +126,6 @@ img {
 
 .read-more {
     display: inline-block;
- 
     cursor: pointer;
     text-decoration: none;
     font-weight: bold;
