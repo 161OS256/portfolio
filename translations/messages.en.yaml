@@ -43,7 +43,7 @@ about-page:
     I wrote a program that operates the bell switch as a checkpoint for the watchman's presence at a given place and time making a report available on the phone 
     (in a browser) from off-site. The program written in 2023 / 2024 works and is still used today.
 
-p1-page:
+home-heating-page:
   title: Home heating control.
   title-nav: Home heating
   start-coding: The project started in 2015
@@ -70,29 +70,24 @@ p1-page:
     I added both programs to the computer's auto start. My program, upon startup, had a special delay of a few seconds due to the reading of the xml file to avoid 
     collision with the logtmp program. As time went on, I improved my program to read the data from the sensors by itself and became more independent.
 
-  p1-1: Main program view
-  p1-2: View from the browser temperature preview 
-  p1-3: Temperature settings
-  p1-4: View from browser login 
-  p1-5: Report 
-  p1-6: Temperature graph 
-  p1-7: Information about the server 
+  home-heating-1: Main program view
+  home-heating-2: View from the browser temperature preview 
+  home-heating-3: Temperature settings
+  home-heating-4: View from browser login 
+  home-heating-5: Report 
+  home-heating-6: Temperature graph 
+  home-heating-7: Information about the server 
 
-  p1a-1: LPT and COM ports used
-  p1a-2: Controller
-  p1a-3: Controlling the air intake for the fireplace
-  p1a-4: Control of three-way valve 
-  p1a-5: Floor heating control 
+  home-heating-technical-1: LPT and COM ports used
+  home-heating-technical-2: Controller
+  home-heating-technical-3: Controlling the air intake for the fireplace
+  home-heating-technical-4: Control of three-way valve 
+  home-heating-technical-5: Floor heating control 
 
   technical: technical issues
   repo: Link to repository
 
-p1a-page:
-  p1a-1: LPT and COM ports used
-  p1a-2: Controller
-  p1a-3: Controlling the air intake for the fireplace
-  p1a-4: Control of three-way valve 
-  p1a-5: Floor heating control 
+
 
 
 

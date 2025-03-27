@@ -13,9 +13,9 @@
 
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
-                   <script>
-            // Scroll on top
-            document.addEventListener("DOMContentLoaded", function () {
+            <script>
+                // Scroll on top
+                document.addEventListener("DOMContentLoaded", function () {
                 let backToTop = document.getElementById("backToTop");
                 let scrollTimeout;
 
@@ -54,11 +54,11 @@
                 }
                 
                 backToTop.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        scrollToTop(800);
-                    });
-            });
-        </script>
+                            event.preventDefault();
+                            scrollToTop(800);
+                        });
+                });
+            </script>
         {% endblock %}
     </head>
     <body>
@@ -81,13 +81,13 @@
                             <a class="nav-link {% if site == 'about' %}active{% endif %}" href="/{{current_locale}}/about">{{ 'home-page.about'| trans }}</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle {% if site == 'pascal' %}active{% endif %}" href="/{{current_locale}}/{{site}}" id="submenu" role="button"
+                            <a class="nav-link dropdown-toggle {% if site == 'home-heating' %}active{% endif %}" href="/{{current_locale}}/{{site}}" id="submenu" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
                                 {{ 'home-page.projects' | trans }}
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="submenu">
-                                <li><a class="dropdown-item" href="{{ path('pascal_index')}}"> {{'p1-page.title-nav' |trans}}</a></li>
-                                <li><a class="dropdown-item" href="{{ path('workorganizer_index')}}"> {{'p2-page.title-nav' |trans}}</a></li>
+                                <li><a class="dropdown-item" href="{{ path('home-heating_index')}}"> {{'home-heating-page.title-nav' |trans}}</a></li>
+                                <li><a class="dropdown-item" href="{{ path('organizer_of_the_work_index')}}"> {{'organizer_of_the_work-page.title-nav' |trans}}</a></li>
                                 <li><a class="dropdown-item" href="{{ path('wolontariat_index')}}"> {{'p3-page.title-nav' |trans}}</a></li>
                                 <li><a class="dropdown-item" href="{{ path('workcontroll_index')}}"> {{'p4-page.title-nav' |trans}}</a></li>
                                 <li><a class="dropdown-item" href="{{ path('portfolio_index')}}"> {{'p5-page.title-nav' |trans}}</a></li>
@@ -123,6 +123,7 @@
                 <br>
             </div>
         </footer>
+        
         <a href="#top" id="backToTop" class="back-to-top"><i class="icon-up-big"></i></a>
         <script>
             // Read more

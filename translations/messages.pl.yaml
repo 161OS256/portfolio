@@ -44,7 +44,7 @@ about-page:
     Napisałem program, który obsługuje przełącznik dzwonkowy jako punkt kontroli obecności stróża w danym miejscu i czasie sporządzając raport dostępny w telefonie 
     (w przeglądarce) z poza siedziby firmy. Program napisany w 2023 / 2024 działa i jest używany do dziś.
 
-p1-page:
+home-heating-page:
   title: Sterowanie ogrzewaniem domu.
   title-nav: Sterowanie ogrzewaniem
   start-coding: Projekt rozpoczęty w 2015r.
@@ -71,29 +71,21 @@ p1-page:
     Oba programy dodałem do auto startu komputera. Mój program po uruchomieniu posiadał specjalne kilkusekundowe opóźnienie ze względu na odczyt pliku xml by uniknąć 
     kolizji z programem logtmp. W miarę upływu czasu ulepszyłem mój program by sam odczytywał dane z czujników i stawał się coraz bardziej samodzielny.
 
-  p1-1: Widok główny programu
-  p1-2: Widok z przeglądarki podgląd temperatur
-  p1-3: Ustawienia temperatury
-  p1-4: Widok z przeglądarki logowanie
-  p1-5: Raport
-  p1-6: Wykres temperatur 
-  p1-7: Informacje o serwerze
-  p1a-1: Wykorzystane porty LPT oraz COM
-  p1a-2: Sterownik
-  p1a-3: Sterowanie dolotem powietrza do kominka
-  p1a-4: Sterowanie zaworem trójdzielnym 
-  p1a-5: Sterowanie ogrzewaniem podłogowym  
+  home-heating-1: Widok główny programu
+  home-heating-2: Widok z przeglądarki podgląd temperatur
+  home-heating-3: Ustawienia temperatury
+  home-heating-4: Widok z przeglądarki logowanie
+  home-heating-5: Raport
+  home-heating-6: Wykres temperatur 
+  home-heating-7: Informacje o serwerze
+  home-heating-technical-1: Wykorzystane porty LPT oraz COM
+  home-heating-technical-2: Sterownik
+  home-heating-technical-3: Sterowanie dolotem powietrza do kominka
+  home-heating-technical-4: Sterowanie zaworem trójdzielnym 
+  home-heating-technical-5: Sterowanie ogrzewaniem podłogowym  
 
   technical: Kwestie techniczne
   repo: Link do repozytorium
-
-  
-p1a-page:
-  p1a-1: Wykorzystane porty LPT oraz COM
-  p1a-2: Sterownik
-  p1a-3: Sterowanie dolotem powietrza do kominka
-  p1a-4: Sterowanie zaworem trójdzielnym 
-  p1a-5: Sterowanie ogrzewaniem podłogowym  
 
  
 licenses-page:

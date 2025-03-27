@@ -22,7 +22,7 @@ class HomeController extends AbstractController
 
         // Tablica projektów puzniej pociącnę to z bazy gdy będzie więcej projektów
         $projects = [
-            'p1' => [
+            'homeheating' => [
                 'route' => 'pascal',
                 'using' => 'Pascal, HTML, CSS, JavaScript',
             ],
