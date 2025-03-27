@@ -124,13 +124,36 @@ organizer-of-the-work-page:
     odpoczynek tygodniowy (weekend). Pełny wynosił nie mniej niż 45 godzin często zwłaszcza za granicą weekendy były skracane do minimum 24 godzin.
 
   description-05: | 
+    W takim przypadku różnicę pomiędzy pełnym odpoczynkiem a skróconym odpoczynkiem tygodniowym. Należało oddać nie później niż do końca trzeciego tygodnia
+    od skróconego odpoczynku tygodniowego. Tych terminów i ilości godzin do oddania z odpowiednim uprzedzeniem aplikacja sumienne mi przypominała. 
+    Jak widać na obrazku "Informacje o weekendach do oddania i finansach" odkrywają się kolejne funkcjonalności. Choćby takie jak finanse.
     
+  description-06: |   
+    Stany zaliczek w trzech walutach. Poglądowe wyliczenie wynagrodzenia ponieważ liczyło tylko stawkę krajową i średnią zagraniczną.
+    Na omawianym obrazku można zauważyć wyszukiwarkę do wyszukiwania w notatkach i "BackUp" czyli kopia zapasowa która umożliwiała przywracanie bazy danych
+    po awarii urządzenia. Każdego dnia po zakończeniu pracy i dokonaniu ostatnich adnotacji obraz "Zakończenie dnia" tworzyła się automatyczna kopia zapasowa.
+
+  description-07: |
+    Kopie zachowane były 4 ostatnie sztuki a wcześniejsze automatycznie skrypt usuwał z pamięci. Pora na małą wycieczkę po aplikacji zaczynając 
+    od  "Widok główny aplikacji" / 'Zrób notatkę' / przeniesie nas do karty "Wprowadzanie notatek" Tutaj widzimy tylko trzy pola do wprowadzania danych ale
+    tutaj jedno pole ma więcej niż jedno zastosowanie. Np. W polu 'Czas' gdy znajdował dię czas wtedy miały zastosowanie odpowiednie procedury. 
+
+  description-08: |
+    Czyli 'Miejscowość' była wykorzystywana w zakładce "Wymiana palet" gdzie dokonano wymiany a 'Notatka' Nazwa firmy w której dokonano wymiany palet.
+    Informacje te wędrowały do osobnej tabeli w bazie i później z tych danych powstawał raport o wymianie palet.
+    Jeżeli w polu 'Czas' wprowadziłem słowo klucz "Agregat" wtedy w pole 'Miejscowość' wpisywałem litry zatankowanego paliwa do agregatu chłodniczego.
+    A w pole 'Notatki' stan licznika motogodzin. Dane te wędrowały do osobnej bazy danych i osobnego raportu.
+
+
 
   organizer-of-the-work-1: Widok główny aplikacji
   organizer-of-the-work-2: Widok rozpoczęcia pracy
   organizer-of-the-work-3: Wprowadzanie godziny rozpoczęcia pracy
   organizer-of-the-work-4: Wprowadzanie godziny zakończenia pracy
   organizer-of-the-work-5: Informacje o weekendach do oddania i finansach
+  organizer-of-the-work-6: Zakończenie dnia
+  organizer-of-the-work-7: Kopia zapasowa
+  organizer-of-the-work-8: Wprowadzanie notatek 
   
 volunteer-association-page:
   title: Wolontariat w Stowarzyszeniu
