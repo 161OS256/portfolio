@@ -85,7 +85,7 @@ home-heating-page:
   home-heating-technical-5: Sterowanie ogrzewaniem podłogowym  
 
   technical: Kwestie techniczne
-  repo: Link do repozytorium
+
 
  
 licenses-page:
@@ -95,7 +95,7 @@ licenses-page:
     Proszę o kontakt jeśli jesteś autorem któregokolwiek z użytych materiałów i masz pytania dotyczące ich wykorzystania.
   licenses-sources: Źródła
 
-p2-page:
+organizer-of-the-work-page:
   title: Organizator pracy ne potrzeby własne.
   title-nav: Organizator pracy
   start-coding: Projekt rozpoczęty w 2016r.
@@ -110,27 +110,21 @@ p2-page:
    
 
 
-  p2-1: Widok główny aplikacji
-
-
-
-
-
-
+  organizer-of-the-work-1: Widok główny aplikacji
 
 
   
-p3-page:
+volunteer-association-page:
   title: Wolontariat w Stowarzyszenieiu
   title-nav: Wolontariat Stowarzyszenie
   start-coding: Projekt rozpoczęty w 2020r.
 
-p4-page:
+monitoring-whe-watchmans-work-page:
   title: Monitorowanie pracy stróża w firmie
   title-nav: Monitorowanie pracy stróża
   start-coding: Projekt rozpoczęty w 2024r.
 
-p5-page:
+information-about-this-site-page:
   title: Krótkie informacje o tej stronie 
   title-nav: Informacje o tej stronie 
   start-coding: Projekt rozpoczęty w 2025r.
@@ -142,4 +136,5 @@ p5-page:
     Dzięki Bootstrapowi aplikacja dostosowuje się do różnych rozmiarów ekranów,
     co zapewnia optymalne doświadczenie na urządzeniach mobilnych, tabletach i komputerach stacjonarnych. 
 
-  
+repo: Link do repozytorium
+not-finisch: Ten projekt jest w trakcie ipisywania już w krutcr będzie dostępny.

@@ -23,23 +23,23 @@ class HomeController extends AbstractController
         // Tablica projektów puzniej pociącnę to z bazy gdy będzie więcej projektów
         $projects = [
             'homeheating' => [
-                'route' => 'pascal',
+                'route' => 'Home-heating',
                 'using' => 'Pascal, HTML, CSS, JavaScript',
             ],
-            'p2' => [
-                'route' => 'workorganizer',
+            'organizerofthework' => [
+                'route' => 'organizer-of-the-work',
                 'using' => 'PHP, HTML, CSS, JavaScript, MySql',
             ],
-            'p3' => [
-                'route' => 'wolontariat',
+            'volunteerassociation' => [
+                'route' => 'volunteer-association',
                 'using' => 'PHP, HTML, CSS, JavaScript, MySql',
             ],
-            'p4' => [
-                'route' => 'workcontroll',
+            'monitoringwhewatchmanswork' => [
+                'route' => 'monitoring-whe-watchmans-work',
                 'using' => 'Pascal, HTML, CSS',
             ],
-            'p5' => [
-                'route' => 'portfolio',
+            'informationaboutthissite' => [
+                'route' => 'information-about-this-site',
                 'using' => 'Symfony',
             ],
 

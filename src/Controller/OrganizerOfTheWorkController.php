@@ -6,15 +6,15 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 
-final class Organizer_of_the_workController extends AbstractController
+final class OrganizerOfTheWorkController extends AbstractController
 {
-    #[Route('/{_locale}/organizer_of_the_work', name: 'organizer_of_the_work_index', requirements: ['_locale' => 'en|pl'])]
+    #[Route('/{_locale}/organizer-of-the-work', name: 'organizer-of-the-work_index', requirements: ['_locale' => 'en|pl'])]
     public function index(string $_locale): Response
     {
         return $this->render('organizer-of-the-work/index.html.twig', [
-            'controller_name' => 'organizer_of_the_workController',
+            'controller_name' => 'OrganizerOfTheWorkController',
             'current_locale' => $_locale,
-            'site' => 'organizer_of_the_work',
+            'site' => 'organizer-of-the-work',
         ]);
     }
 }

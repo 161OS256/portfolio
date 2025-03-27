@@ -13,8 +13,6 @@
  {# <center>{{(folder ~'-page.'~ folder ~'-'~ id)|trans}}</center> #}
 <div class="compsoul-slider compsoul-slider-fade">
 
-
-
         {% for i in 1.. number %}
              <article class="compsoul-slide">
                 <figure class="compsoul-slide-figure">
@@ -38,12 +36,11 @@
 
   <nav class="compsoul-slide-navigation">
     <ul>
+      
         {% for i in 1.. number %}
 
         <li class="compsoul-slide-nav">
-            <button class="compsoul-slide-point">
-            <span class="compsoul-slide-hidden">Ładowanie zdjęć nie blokuje wczytywania strony!</span>
-            </button>
+            <button class="compsoul-slide-point"></button>
         </li>
 
         {% set id = (id + 1) %}

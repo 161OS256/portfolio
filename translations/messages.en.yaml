@@ -85,7 +85,7 @@ home-heating-page:
   home-heating-technical-5: Floor heating control 
 
   technical: technical issues
-  repo: Link to repository
+  
 
 
 
@@ -98,7 +98,7 @@ licenses-page:
     Please contact me if you are the author of any of the materials used and have questions about their use.
   licenses-sources: Sources
 
-p2-page:
+organizer-of-the-work-page:
   title: Organizer of work ne own needs.
   title-nav: Organizer of the work
   start-coding: The project started in 2016r.
@@ -112,7 +112,7 @@ p2-page:
 
   description-02: | 
 
-  p2-1: Main view of the application
+  organizer-of-the-work-1: Main view of the application
 
 
 
@@ -121,17 +121,17 @@ p2-page:
 
 
 
-p3-page:
+volunteer-association-page:
   title: Volunteer Association
   title-nav: Volunteer Association
   start-coding: Project started in 2020.
 
-p4-page:
+monitoring-whe-watchmans-work-page:
   title: Monitoring the watchman's work in the company
   title-nav: Monitoring the watchman's work
   start-coding: Project started in 2024.
 
-p5-page:
+information-about-this-site-page:
   title: Brief information about this site 
   title-nav: Information about this site
   start-coding: Project started in 2025.
@@ -142,3 +142,6 @@ p5-page:
     Frontend - Bootstrap: In the project I used Bootstrap to build responsive and aesthetically pleasing user interfaces.
     Thanks to Bootstrap, the app adapts to different screen sizes,
     which provides an optimal experience on mobile devices, tablets and desktops. 
+
+repo: Link to repository
+not-finisch: This project is under iwriting already in krutcr will be available
