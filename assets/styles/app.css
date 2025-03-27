@@ -30,7 +30,7 @@ html, body {
 }
 
 .dropdown-item {
-    color: #fff !important; 
+    color: #fff; 
 }
 
 .dropdown-menu :hover {
@@ -139,8 +139,17 @@ img {
     color: #42b932;
 }
 
+.off {
+    pointer-events: none; /* blokuje kliknięcie */
+    color:  rgb(157, 157, 157); /* zmienia kolor tekstu */
+    text-decoration: none; /* usuwa podkreślenie */
+  }
+
 @media screen and (max-width: 768px) {
 .intro {
     padding: 0;
     }
 } 
+
+
+  
