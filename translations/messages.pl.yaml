@@ -86,8 +86,6 @@ home-heating-page:
 
   technical: Kwestie techniczne
 
-
- 
 licenses-page:
   licenses: |
     Wszystkie grafiki i ikony użyte na tej stronie zostały pobrane z ogólnodostępnych źródeł, które umożliwiają ich wykorzystanie w celach niekomercyjnych. 
@@ -96,26 +94,46 @@ licenses-page:
   licenses-sources: Źródła
 
 organizer-of-the-work-page:
-  title: Organizator pracy ne potrzeby własne.
+  title: Organizator pracy na potrzeby własne.
   title-nav: Organizator pracy
   start-coding: Projekt rozpoczęty w 2016r.
   
   description-01: | 
-    Pisząc tą aplikację w 2016r nie wiele wiedziałem o obiektowości więc aplikacja napisana jeszcze strukturalnie. 
+    Pisząc tą aplikację w 2016r nie wiele wiedziałem o obiektowym programowaniu więc aplikacja napisana jeszcze strukturalnie. 
     Z końcem 2024 zaprzestałem używania tej aplikacji wraz z końcem kariery kierowcy.
-    W brew pozorom była dosyć rozbudowana wiele kart i funkcjonalności. Głównym celem projektu było zbudowanie inteligentnego ala notatnika. 
-    Aby w ciągu dnia wprowadzać kolejno istotne adnotacje. Istotą sprawy było to by aplikacja spełniała swoją rolę. Kwestie frontendowe 
+    W brew pozorom była dosyć rozbudowana wiele kart i funkcjonalności. 
+    Istotą sprawy było to by aplikacja spełniała swoją rolę. Kwestie frontendowe 
     nie były najważniejsze ponieważ aplikacja była tylko na potrzeby własne. 
-  description-02: | 
    
+  description-02: | 
+    Głównym celem projektu było zbudowanie inteligentnego ala notatnika. 
+    Aby w ciągu dnia wprowadzać kolejno istotne adnotacje które, później będą automatycznie przetwarzane i wprowadzane do odpowiednich raportów.
+    Na obrazku "Widok rozpoczęcia pracy" widzimy prosty widok wprowadzania daty rozpoczęcia. W widoku chciałem mieć duze przyciski ponieważ planowałem 
+    używać aplikację w tablecie 7 cali. I w taki prosty sposób wprowadzałem podstawowe dane do mini systemu. 
 
+  description-03: | 
+    Nie tylko mp. Po rozpoczęciu dnia na głównym widoku pokazywał do której godziny mogę w danym
+    dniu pracować, uwzględniając wykorzystane przerwy w danym tygodniu co widać na obrazku "Widok główny aplikacji", Pauzy 9h (2). To oznacza że mam do 
+    wykorzystania dwie przerwy o długości 9 godzin, a to oznaczało że mogę pracować 15h. Ponieważ czas pracy i odpoczynku dziennego (nocleg) musiał
+    sie zmieścić w 24h.
+    
+
+  description-04: | 
+    Jeśli licznik wskazywał by 0 w takim przypadku musiałem zastosować przerwę po pracy nie 9 a 11 godzin. Co zarazem skracało możliwość pracy do 13h.
+    To tylko 1 z naj prostszych zagadnień jak pilnowanie ile razy już skróciłem czas pracy. Sprawy komplikowały się znacznie gdy musiałem skrócić 
+    odpoczynek tygodniowy (weekend). Pełny wynosił nie mniej niż 45 godzin często zwłaszcza za granicą weekendy były skracane do minimum 24 godzin.
+
+  description-05: | 
+    
 
   organizer-of-the-work-1: Widok główny aplikacji
-
-
+  organizer-of-the-work-2: Widok rozpoczęcia pracy
+  organizer-of-the-work-3: Wprowadzanie godziny rozpoczęcia pracy
+  organizer-of-the-work-4: Wprowadzanie godziny zakończenia pracy
+  organizer-of-the-work-5: Informacje o weekendach do oddania i finansach
   
 volunteer-association-page:
-  title: Wolontariat w Stowarzyszenieiu
+  title: Wolontariat w Stowarzyszeniu
   title-nav: Wolontariat Stowarzyszenie
   start-coding: Projekt rozpoczęty w 2020r.
 

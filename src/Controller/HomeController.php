@@ -18,7 +18,7 @@ class HomeController extends AbstractController
         $request->setLocale($_locale);
 
         // Tłumaczenie
-        $translatedText = $translator->trans('programer');
+        $translatedText = $translator->trans('repo');
 
         // Tablica projektów puzniej pociącnę to z bazy gdy będzie więcej projektów
         $projects = [
