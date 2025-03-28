@@ -108,19 +108,18 @@ organizer-of-the-work-page:
   description-02: | 
     Głównym celem projektu było zbudowanie inteligentnego ala notatnika. 
     Aby w ciągu dnia wprowadzać kolejno istotne adnotacje które, później będą automatycznie przetwarzane i wprowadzane do odpowiednich raportów.
-    Na obrazku "Widok rozpoczęcia pracy" widzimy prosty widok wprowadzania daty rozpoczęcia. W widoku chciałem mieć duze przyciski ponieważ planowałem 
+    Na obrazku "Widok rozpoczęcia pracy" widzimy prosty widok wprowadzania daty rozpoczęcia. W widoku chciałem mieć duże przyciski ponieważ planowałem 
     używać aplikację w tablecie 7 cali. I w taki prosty sposób wprowadzałem podstawowe dane do mini systemu. 
 
   description-03: | 
     Nie tylko mp. Po rozpoczęciu dnia na głównym widoku pokazywał do której godziny mogę w danym
     dniu pracować, uwzględniając wykorzystane przerwy w danym tygodniu co widać na obrazku "Widok główny aplikacji", Pauzy 9h (2). To oznacza że mam do 
     wykorzystania dwie przerwy o długości 9 godzin, a to oznaczało że mogę pracować 15h. Ponieważ czas pracy i odpoczynku dziennego (nocleg) musiał
-    sie zmieścić w 24h.
+    się zmieścić w 24h.
     
-
   description-04: | 
     Jeśli licznik wskazywał by 0 w takim przypadku musiałem zastosować przerwę po pracy nie 9 a 11 godzin. Co zarazem skracało możliwość pracy do 13h.
-    To tylko 1 z naj prostszych zagadnień jak pilnowanie ile razy już skróciłem czas pracy. Sprawy komplikowały się znacznie gdy musiałem skrócić 
+    To tylko 1 z najprostszych zagadnień jak pilnowanie ile razy już skróciłem czas pracy. Sprawy komplikowały się znacznie gdy musiałem skrócić 
     odpoczynek tygodniowy (weekend). Pełny wynosił nie mniej niż 45 godzin często zwłaszcza za granicą weekendy były skracane do minimum 24 godzin.
 
   description-05: | 
@@ -136,14 +135,38 @@ organizer-of-the-work-page:
   description-07: |
     Kopie zachowane były 4 ostatnie sztuki a wcześniejsze automatycznie skrypt usuwał z pamięci. Pora na małą wycieczkę po aplikacji zaczynając 
     od  "Widok główny aplikacji" / 'Zrób notatkę' / przeniesie nas do karty "Wprowadzanie notatek" Tutaj widzimy tylko trzy pola do wprowadzania danych ale
-    tutaj jedno pole ma więcej niż jedno zastosowanie. Np. W polu 'Czas' gdy znajdował dię czas wtedy miały zastosowanie odpowiednie procedury. 
+    tutaj jedno pole ma więcej niż jedno zastosowanie. Np. W polu 'Czas' gdy znajdował się czas wtedy miały zastosowanie odpowiednie procedury. 
 
   description-08: |
-    Czyli 'Miejscowość' była wykorzystywana w zakładce "Wymiana palet" gdzie dokonano wymiany a 'Notatka' Nazwa firmy w której dokonano wymiany palet.
-    Informacje te wędrowały do osobnej tabeli w bazie i później z tych danych powstawał raport o wymianie palet.
+    Czyli 'Miejscowość' była wykorzystywana w zakładce "Wymiana palet" gdzie dokonano wymiany. Oraz jako zwykłą notatka.
     Jeżeli w polu 'Czas' wprowadziłem słowo klucz "Agregat" wtedy w pole 'Miejscowość' wpisywałem litry zatankowanego paliwa do agregatu chłodniczego.
-    A w pole 'Notatki' stan licznika motogodzin. Dane te wędrowały do osobnej bazy danych i osobnego raportu.
+    A w pole 'Notatki' stan licznika motogodzin. Dane te wędrowały do bazy danych i później z tych danych powstawał raport.
+    W Karcie "Wymiana palet" można zauważyć 'Miejscowość' wczytaną z pamięci. 
 
+  description-09: |
+    W pole 'Uwagi' wprowadzałem nazwa firmy w której dokonano wymiany palet. Informacje te wędrowały do osobnej tabeli w bazie i później z tych danych
+    powstawał raport o wymianie palet. W karcie tej widać moduł do wysyłania raportu oraz podglądu wcześniejszych raportów. Moduł ten wysyłał do pracodawcy 
+    informacje o wymianie palet oraz rozliczenie wydatków służbowych. Podgląd raportów widzimy na obrazku "Podgląd raportów wymiany palet".
+  
+  description-10: |
+    Po powrocie z karty "Wymiana palet" do "Głównego widoku aplikacji". Przechodzimy do 'informacje wpisy' karta "Informacje o weekendach do oddania i finansach".
+    Z tej karty przechodzimy do 'Poprzednie wpisy' do karty "Podgląd notatek". Z poziomu tej karty wysyłałem raporty takie jak zestawienie notatek na mój adres mailowy
+    'Wyślij raport na mejla'. 
+
+  description-11: |
+    Wysyłałem także rejestry przekraczania granic państw (regulacje unijne) informacje potrzebne były pracodawcy do rozliczeń.
+    oraz informacje o tankowaniu agregatu chłodniczego. W karcie "Widok główny aplikacji" widzimy przycisk z informacją ile dni pozostało do terminu 'Termin za 5 dni'.
+    Przycisk przeniesie nas do karty "Podgląd terminów" gdzie zastosowałem klasycznego "CRUD" (Create, Read, Update, Delete). Czyli dodawanie nowego terminu, 
+    odczyt terminów, aktualizacja (edycja) terminu, oraz usuwanie terminu.
+
+  description-12: |
+    W karcie "Widok główny aplikacji" pozostał ostatni szczegół do opisania 'Pauza 3h' co wynika z przepisów które można było wykorzystywać w pracy.
+    Otóż gdy wciągu dnia miałem przerwę nie planowaną (oczekiwanie na rozładunek / załadunek). Jeśli taka przerwa była dłuższa niż 3 godziny. W takim
+    przypadku można było zastosować po pracy pełny łączony odpoczynek dzienny 3h + 9h. Daje nam to że po pracy mogę zastosować skrócony odpoczynek dzienny 9 godzin.
+    A zostanie to potraktowane jako pełny 11 godzinny odpoczynek dzienny.
+
+  description-13: |
+    To już wszystko co chciałem opisać w opisie tej aplikacji oczywiście przedstawiłem tutaj najistotniejsze zagadnienia z mojego punktu widzenia.
 
 
   organizer-of-the-work-1: Widok główny aplikacji
@@ -154,7 +177,13 @@ organizer-of-the-work-page:
   organizer-of-the-work-6: Zakończenie dnia
   organizer-of-the-work-7: Kopia zapasowa
   organizer-of-the-work-8: Wprowadzanie notatek 
-  
+  organizer-of-the-work-9: Wymiana palet
+  organizer-of-the-work-10: Podgląd notatek 
+  organizer-of-the-work-11: Podgląd raportów wymiany palet
+  organizer-of-the-work-12: Podgląd rejestrów
+  organizer-of-the-work-13: Podgląd terminów 
+
+
 volunteer-association-page:
   title: Wolontariat w Stowarzyszeniu
   title-nav: Wolontariat Stowarzyszenie
@@ -178,4 +207,3 @@ information-about-this-site-page:
     co zapewnia optymalne doświadczenie na urządzeniach mobilnych, tabletach i komputerach stacjonarnych. 
 
 repo: Link do repozytorium
-not-finisch: Ten projekt jest w trakcie ipisywania już w krutcr będzie dostępny.

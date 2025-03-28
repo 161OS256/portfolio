@@ -86,11 +86,6 @@ home-heating-page:
 
   technical: technical issues
   
-
-
-
-
-
 licenses-page:
   licenses: |
     All graphics and icons used on this site have been downloaded from publicly available sources that allow their use for non-commercial purposes. 
@@ -110,16 +105,81 @@ organizer-of-the-work-page:
     So that during the day I could enter relevant annotations one by one. The essence of the matter was for the application to fulfill its role. Frontend issues 
     were not the most important because the application was only for personal use. 
 
-  description-02: | 
+  description-02: |
+    The main goal of the project was to build a smart ala notepad. 
+    So that during the course of the day we would enter sequentially relevant annotations which, later on, would be automatically processed and entered into relevant reports.
+    In the “Start View” image you can see a simple view of entering the start date. In the view I wanted large buttons because I planned to 
+    use the application on a 7-inch tablet. And this is the simple way I entered the basic data into the mini system. 
+  description-03: | 
+    Not only mp. After starting the day, the main view showed until what time I could
+    day to work, taking into account the used breaks for the week as you can see in the image “Main view of the application”, Pauses 9h (2). This means that I have to 
+    use two breaks of 9 hours, and this meant that I could work 15h. Since the working time and daily rest (overnight) had to
+    fit into 24h.
+
+  description-04: | 
+    If the counter indicated 0 in such a case I had to apply a break after work not 9 but 11 hours. Which at the same time reduced the possibility of working up to 13h.
+    This is just 1 of the simplest issues like keeping track of how many times I had already reduced my working hours. Things got much more complicated when I had to shorten the 
+    weekly rest (weekend). Full was no less than 45 hours often especially abroad weekends were shortened to a minimum of 24 hours.
+  
+  description-05: | 
+    In this case, the difference between full rest and shortened weekly rest. It was due no later than the end of the third week
+    of the shortened weekly rest. These deadlines and the number of hours to be surrendered with due notice, the application conscientiously reminded me. 
+    As you can see in the image “Information about weekends to give back and finances” more functionality is revealed. If only such as finances.
+    
+  description-06: |  
+    Advance states in three currencies. An illustrative calculation of salary because it only counted the domestic rate and the foreign average.
+    In the image in question, you can see the search engine for searching in the notes and the “BackUp” or backup which allowed the database to be restored
+    after a device failure. Each day, after finishing work and making the last annotations, the “End of Day” image created an automatic backup.
+
+  description-07: |
+    Copies were kept of the last 4 pieces and the earlier ones were automatically deleted from memory by the script. Time for a little tour of the application starting 
+    from the “Main view of the application” / 'Take a note' / will take us to the “Enter notes” tab Here we see only three fields for entering data but
+    here one field has more than one use. E.g. In the field 'Time' when there was a time then the corresponding procedures applied. 
+
+  description-08: |
+    That is, 'Location' was used in the 'Pallet Exchange' tab where the exchange was made. And as a simple note.
+    If I entered the keyword “Chiller” in the 'Time' field then in the 'Locality' field I entered the liters of refuelled fuel for the chiller.
+    And in the 'Notes' field, the status of the motor hour counter. This data traveled to the database and later a report was created from this data.
+    In the 'Pallet Replacement' card you can see the 'Locality' loaded from memory. 
+
+  description-09: |
+    In the 'Remarks' field, I entered the name of the company where the pallet exchange was made. This information wandered to a separate table in the database and later from this data
+    pallet exchange report was created from this data. The tab shows a module for sending the report and previewing previous reports. This module sent to the employer 
+    information about pallet exchange and settlement of business expenses. We can see the preview of the reports in the image “Pallet exchange report preview”.
+  
+  description-10: |
+    After returning from the 'Pallet Exchange' tab to the 'Main Application View'. Navigate to the 'information entries' tab “Information about weekends to donate and finances”.
+    From this tab, go to 'Previous entries' to the 'Notes preview' tab. From this tab, I sent reports such as a summary of notes to my email address
+    'Send report to email. 
+
+  description-11: |
+    I also sent records of crossing state borders (EU regulations) information needed by the employer for billing.
+    As well as information about refueling the refrigeration unit. In the tab “Main view of the application” we see a button with information on how many days are left until the deadline 'Deadline in 5 days'.
+    The button will take us to the “Term View” tab where I applied the classic “CRUD” (Create, Read, Update, Delete). That is, adding a new appointment, 
+    read appointments, update (edit) an appointment, and delete an appointment.
+
+  description-12: |
+    In the tab “Main view of the application” there was one last detail left to describe 'Pause 3h', which is due to the regulations that could be used at work.
+    Well, when during the day I had an unscheduled break (waiting for unloading / loading). If such a break was longer than 3 hours. In such a case
+    case it was possible to apply after work a full combined daily rest of 3h + 9h. This gives us that after work I can apply a shortened daily rest of 9 hours.
+    And this will be treated as a full 11-hour daily rest.
+
+  description-13: |
+    That's all I wanted to describe in the description of this application of course I presented here the most relevant issues from my point of view.
 
   organizer-of-the-work-1: Main view of the application
-
-
-
-
-
-
-
+  organizer-of-the-work-2: Start-up view
+  organizer-of-the-work-3: Entering the start time
+  organizer-of-the-work-4: Entering the end of work time
+  organizer-of-the-work-5: Information on weekends to donate and finances
+  organizer-of-the-work-6: End of the day
+  organizer-of-the-work-7: Backup
+  organizer-of-the-work-8: Entering notes 
+  organizer-of-the-work-9: Pallet exchange
+  organizer-of-the-work-10: Preview notes 
+  organizer-of-the-work-11: Preview of pallet exchange reports
+  organizer-of-the-work-12: Viewing registers
+  organizer-of-the-work-13: Date preview 
 
 volunteer-association-page:
   title: Volunteer Association
