@@ -74,6 +74,7 @@ img {
 
 .home-img {
     height: 270px;
+    max-width: 450px;
 }
 
 .back-to-top {

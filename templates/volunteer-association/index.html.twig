@@ -1,7 +1,18 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<center><h1>{{'volunteer-association-page.title' |trans}}</h1></center>
+<center><h1>{{'volunteer-association-page.title' |trans}}</h1>
+<h3><a href="https://oscarsierra.pl">oscarsierra.pl</a></h3></center>
 
-<center><h3>{{'not-finisch'|trans}}</h3></center>
+
+<div class="row">
+     {% set number_of_images  = 2 %}
+    <div class="col-lg-12 col-xl-4 m-auto text-center">
+        <a href="slider/volunteer-association/{{number_of_images}}/1"><img src="{{ asset('img/volunteer-association/1.png') }}"  alt="Obrazek"></a>
+        <center>{{'volunteer-association-page.volunteer-association-1'|trans}}</center>
+    </div>
+    <div class="col-lg-12 col-xl-8 m-auto">
+        <p>{{'volunteer-association-page.description-01'|trans}}</p>
+    </div>
+</div>
 {% endblock %}

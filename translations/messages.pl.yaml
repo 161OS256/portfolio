@@ -195,6 +195,17 @@ volunteer-association-page:
   title-nav: Wolontariat Stowarzyszenie
   start-coding: Projekt rozpoczęty w 2020r.
 
+  description-01: |
+    Widok główny witryny przedstawia dwa ciekawe elementy pomarańczowa 'karuzela' tak to nazywamy w Stowarzyszeniu, oraz mapka na której widnieją spoty z ostatniej godziny.
+    Użytkownicy logują się do systemu clustera za pomocą forum. Z dwóch powodów, zachęcenie klubowiczów do częstszego odwiedzania forum klubowego oraz zaoszczędzenia pracy.
+    Ponieważ forum którego używamy phpBB posiada system logowania. Informacje o zalogowanym użytkowniku z forum do clustera są przekazywane w zmiennej sesyjnej.
+    W clusterze jest zastosowany klasyczny "CRUD" (Create, Read, Update, Delete).
+
+
+  volunteer-association-1:  Widok główny aplikacji
+
+
+
 monitoring-whe-watchmans-work-page:
   title: Monitorowanie pracy stróża w firmie
   title-nav: Monitorowanie pracy stróża
