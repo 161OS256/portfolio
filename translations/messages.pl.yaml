@@ -201,8 +201,17 @@ volunteer-association-page:
     Ponieważ forum którego używamy phpBB posiada system logowania. Informacje o zalogowanym użytkowniku z forum do clustera są przekazywane w zmiennej sesyjnej.
     W clusterze jest zastosowany klasyczny "CRUD" (Create, Read, Update, Delete).
 
+  description-02: |
+    Formularz clustera widzimy na obrazku "Formularz QSO". W przeciwieństwie do strony domowej którą widzimy na obrazku "Widok główny aplikacji" jest w starej wersji (legasy).
+    Tylko kolorystycznie dopasowany do reszty witryny, czeka na przepisanie od nowa. Planujemy przepisanie całości do symfony ale to plany na przyszłość.
+
+
+
+
+
 
   volunteer-association-1:  Widok główny aplikacji
+  volunteer-association-2:  Formularz QSO
 
 
 
