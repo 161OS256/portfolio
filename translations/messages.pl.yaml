@@ -196,14 +196,25 @@ volunteer-association-page:
   start-coding: Projekt rozpoczęty w 2020r.
 
   description-01: |
-    Widok główny witryny przedstawia dwa ciekawe elementy pomarańczowa 'karuzela' tak to nazywamy w Stowarzyszeniu, oraz mapka na której widnieją spoty z ostatniej godziny.
-    Użytkownicy logują się do systemu clustera za pomocą forum. Z dwóch powodów, zachęcenie klubowiczów do częstszego odwiedzania forum klubowego oraz zaoszczędzenia pracy.
-    Ponieważ forum którego używamy phpBB posiada system logowania. Informacje o zalogowanym użytkowniku z forum do clustera są przekazywane w zmiennej sesyjnej.
-    W clusterze jest zastosowany klasyczny "CRUD" (Create, Read, Update, Delete).
+    Na tes stronie widzimy dwa ciekawe elementy pierwszy z nich to pomarańczowa 'karuzela'. Na której widnieją aktywne stacje a w przypadku braku aktywnych stacji, 
+    na karuzeli widnieją wyniki całorocznego konkursu. Drugim ciekawym elementem jest mapka która przedstawia łączności radiowe z ostatniej godziny.
+    Po kliknięciu w ikonkę stacji zobaczymy informację o łączności oraz podlinkowany znak radiowy. W przypadku dużej aktywności gdy połączeń jest dużo na mapie.
+    Klikając w dymku na podlinkowany znak radiowy zobaczymy na mapce odfiltrowane łączności tylko tej jednej stacji co można zobaczyć na obrazkach 
+    "Przed odfiltrowaniem" i "Po odfiltrowaniu".
 
   description-02: |
-    Formularz clustera widzimy na obrazku "Formularz QSO". W przeciwieństwie do strony domowej którą widzimy na obrazku "Widok główny aplikacji" jest w starej wersji (legasy).
-    Tylko kolorystycznie dopasowany do reszty witryny, czeka na przepisanie od nowa. Planujemy przepisanie całości do symfony ale to plany na przyszłość.
+    Logowanie do formularza odbywa się przy pomocy forum. Ponieważ pierwotnie cluster miał służyć tylko członkom klubu dlatego do logowania wykorzystałem zmienną sesyjną
+    forum phpBB. Obsługa formularza to to oczywiście klasyczny "CRUD" (Create, Read, Update, Delete). Ale pod spodem kryje się wiele bardziej skarbikowanych mechanizmów.
+    Choćby implementowanie kart QSL (Obrazek w formie widokówki potwierdzający łączność). Które są do pobrania bezpośrednio z samego clustera obrazek "Cluster";
+
+  description-03: |
+    W clusterze oprócz kart do pobrania możemy podejrzeć daną łączność na mapce. Wracając do formularza clustera i tego co jeszcze kryje się pod spodem.
+    W Stowarzyszeniu odbywają się czasami wszelkiego rodzaju konkursy, akcje dyplomowe, aktywacje. I tutaj są potrzebne mechanizmy by te zagadnienia obsłużyć.
+    Do tego celu zbudowałem panel administracyjny do inicjowania takich zdarzeń.
+
+  description-04: |
+    
+
 
 
 
@@ -211,9 +222,13 @@ volunteer-association-page:
 
 
   volunteer-association-1:  Widok główny aplikacji
-  volunteer-association-2:  Formularz QSO
-
-
+  volunteer-association-2:  Przed odfiltrowaniem
+  volunteer-association-3:  Po odfiltrowaniu 
+  volunteer-association-4:  Wzmożony ruch w eterze krajowym
+  volunteer-association-5:  Formularz QSO
+  volunteer-association-6:  Cluster
+  volunteer-association-7:  Wzmożony ruch w eterze międzynarodowym 
+  
 
 monitoring-whe-watchmans-work-page:
   title: Monitorowanie pracy stróża w firmie

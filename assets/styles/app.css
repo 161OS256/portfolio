@@ -145,6 +145,11 @@ img {
     color:  rgb(157, 157, 157); /* zmienia kolor tekstu */
     text-decoration: none; /* usuwa podkreślenie */
   }
+.img-standard {
+    width: 350px;
+    height: 300px;
+}
+
 
 @media screen and (max-width: 768px) {
 .intro {
