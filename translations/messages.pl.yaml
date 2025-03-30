@@ -196,48 +196,52 @@ volunteer-association-page:
   start-coding: Projekt rozpoczęty w 2020r.
 
   description-01: |
-    Na tes stronie widzimy dwa ciekawe elementy pierwszy z nich to pomarańczowa 'karuzela'. Na której widnieją aktywne stacje a w przypadku braku aktywnych stacji, 
-    na karuzeli widnieją wyniki całorocznego konkursu. Drugim ciekawym elementem jest mapka która przedstawia łączności radiowe z ostatniej godziny.
-    Po kliknięciu w ikonkę stacji zobaczymy informację o łączności oraz podlinkowany znak radiowy. W przypadku dużej aktywności gdy połączeń jest dużo na mapie.
-    Klikając w dymku na podlinkowany znak radiowy zobaczymy na mapce odfiltrowane łączności tylko tej jednej stacji co można zobaczyć na obrazkach 
+    Na tej stronie widzimy dwa ciekawe elementy, pierwszy z nich to "pomarańczowa karuzela". Widnieją na niej aktywne stacje, a w przypadku ich braku 
+    na karuzeli widać wyniki całorocznego konkursu. Drugim ciekawym elementem jest mapka, która przedstawia łączności radiowe z ostatniej godziny.
+    Po kliknięciu w ikonkę stacji zobaczymy informację o łączności oraz podlinkowany znak radiowy. W przypadku dużej aktywności, gdy połączeń jest dużo na mapie,
+    klikając w dymku na podlinkowany znak radiowy zobaczymy na mapce odfiltrowane łączności tylko tej jednej stacji, co można zobaczyć na obrazkach 
     "Przed odfiltrowaniem" i "Po odfiltrowaniu".
 
   description-02: |
-    Logowanie do formularza odbywa się przy pomocy forum. Ponieważ pierwotnie cluster miał służyć tylko członkom klubu dlatego do logowania wykorzystałem zmienną sesyjną
-    forum phpBB. Obsługa formularza to to oczywiście klasyczny "CRUD" (Create, Read, Update, Delete). Ale pod spodem kryje się wiele bardziej skarbikowanych mechanizmów.
-    Choćby implementowanie kart QSL (Obrazek w formie widokówki potwierdzający łączność). Które są do pobrania bezpośrednio z samego clustera obrazek "Cluster";
+    Logowanie do formularza odbywa się przy pomocy forum. Pierwotnie cluster miał służyć tylko członkom klubu, dlatego do logowania wykorzystałem zmienną sesyjną
+    forum phpBB. Obsługa formularza to oczywiście klasyczny "CRUD" (Create, Read, Update, Delete). Pod spodem kryje się więcej skomplikowanych mechanizmów
+    choćby implementowanie kart QSL (obrazek w formie widokówki potwierdzający łączność). Są one do pobrania bezpośrednio z samego clustera obrazek "Cluster".
 
   description-03: |
-    W clusterze oprócz kart do pobrania możemy podejrzeć daną łączność na mapce. Wracając do formularza clustera i tego co jeszcze kryje się pod spodem.
-    W Stowarzyszeniu odbywają się czasami wszelkiego rodzaju konkursy, akcje dyplomowe, aktywacje. I tutaj są potrzebne mechanizmy by te zagadnienia obsłużyć.
-    Do tego celu zbudowałem panel administracyjny do inicjowania takich zdarzeń obrazek "Panel administracyjny clustera".
+    W clusterze oprócz kart do pobrania możemy podejrzeć daną łączność na mapce. Wracając do tematu formularza clustera i tego co jeszcze kryje się pod spodem-
+    w Stowarzyszeniu odbywają się czasami wszelkiego rodzaju konkursy, akcje dyplomowe, aktywacje i tutaj są potrzebne mechanizmy by te zagadnienia obsłużyć.
+    W tym celu stworzyłem panel administracyjny do inicjowania takich zdarzeń - obrazek "Panel administracyjny clustera".
 
   description-04: |
-    Panel administracyjny obsługuje akcje dyplomowe do których można przydzielić specjalną na daną okazję kartę QSL. Szczególnie kłopotliwe w strukturalnym kodzie 
-    było obsłużyć możliwość uzupełniania wpisów po zakończonej akcji. Ponieważ czas akcji dyplomowej dobiegł konca a użytkownik potrzebował czas na dodanie ostatnich
-    łączności. I łączności wprowadzane w po zakończonej akcji ale z datą która mieści się w ramach akcji musiała być akceptowana. Obrazek "Panel administracyjny clustera"
-    przedstawia tabelę w której jest widoczna rubryka 'Uzup' w tej rubryce znajduje się ilość godzin przeznaczonych na uzupełnianie zaległych wpisów.
+    Panel administracyjny obsługuje akcje dyplomowe, do których można przydzielić specjalną na daną okazję kartę QSL. Szczególnie kłopotliwa w strukturalnym kodzie 
+    okazała się obsługa możliwości uzupełniania wpisów po zakończonej akcji. Ponieważ użytkownik potrzebuje czas na dodanie ostatnich
+    łączności po tym jak czas akcji dyplomowej dobiegł końca. Łączności wprowadzane po zakończonej akcji z datą, która mieści się w ramach akcji musiała być akceptowana.
+    Obrazek "Panel administracyjny clustera" przedstawia tabelę, w której jest widoczna rubryka 'Uzup', w tej rubryce znajdują się ilość godzin przeznaczonych
+    na uzupełnianie zaległych wpisów.
 
   description-05: |
-    W późniejszych akcjach dyplomowych jak można zauważyć dodano funkcjonalność polegającą na zróżnicowanej punktacji. Rubryki 'Wob' czyli w obrębie własnego kraju,
-    'Poz' czyli po za obręb kraju w którym stacjonuje stacja oraz 'DX' czyli łączności wybiegające po za Europę. Obsługa tej funkcjonalności polegała na przetworzeniu 
-    zmiennej typu string przykładowy znak z pasma CB np. '161OS256' czyli mamy string i szukamy w nim pozycji która nie jest liczbą resztę odcinamy i mamy numer dywizjonu.
+    W późniejszych akcjach dyplomowych jak można zauważyć dodano funkcjonalność polegającą na zróżnicowanej punktacji. Zróżnicowana punktacja była uzależniona od 
+    tego czy łączność była wewnątrz kraju, czy też po za kraj, w którym stacjonuje dana stacja lub też po za Europę. Rubryki 'Wob' czyli w obrębie własnego kraju,
+    'Poz' czyli po za obręb kraju, w którym stacjonuje stacja oraz 'DX' czyli łączności wybiegające po za Europę. Obsługa tej funkcjonalności polegała na przetworzeniu 
+    zmiennej typu string przykładowy znak z pasma CB np. '161OS256' (czyli mamy string i szukamy w nim pozycji, która nie jest liczbą, resztę odcinamy i mamy numer dywizjonu).
     Numer ten określa z jakiego kraju dana stacja nadaje, więc wystarczyło do bazy wprowadzić listę dywizjonów należących do Europy. I w ten sposób naliczane były punkty.
-    Jeśli mój respondent ma inny dywizjon niż mój wtedy sprawdzamy czy jest na liście dywizjonów Europejskich jeśli tak 3 punkty a w przeciwnym wypadku 2. 
-    Wracając so formularza clustera na wczesnym etapie tworzenia jedną z pierwszych funkcjonalności było ułatwienie lokalizowania respondenta. 
+    Jeśli respondent ma inny dywizjon niż mój wtedy sprawdzamy czy jest na liście dywizjonów Europejskich jeśli tak:otrzymuje 2 punkty a w przeciwnym wypadku 3. 
+    Wracając do formularza clustera, na wczesnym etapie tworzenia jedną z pierwszych funkcjonalności było ułatwienie lokalizowania respondenta. 
 
   description-06: |  
     Jeśli respondent należał do 
-    klubu i wyraził zgodę na udostępnienie lokalizacji swojej stacji, w tedy jeśli użytkownik wprowadził w formularzu znak takiego operatora, otrzymywał informację
-    'Locator w bazie danych'. Ostatni istotny szczegół całego systemu który pozostał do opisania w tym projekcie jest Aplikacja na Androida. Patrząc na "Formularz QSO" można sobie wyobrazić 
+    klubu i wyraził zgodę na udostępnienie lokalizacji swojej stacji, wtedy jeśli użytkownik wprowadził w formularzu znak takiego operatora, otrzymywał informację
+    'Locator w bazie danych'. To oznaczało, że lokalizacja stacji jest zapisana w bazie danych i nie trzeba respondenta dopytywać skąd nadaje.
+    Ostatni istotny szczegół całego systemu, który pozostał do opisania w tym projekcie jest Aplikacja na Androida. Patrząc na "Formularz QSO" można sobie wyobrazić 
     obsługę tegoż formularza na wąskim ekranie smartfona. Początkowo planowałem napisać wersję formularza dla urządzeń przenośnych. Co nie ukrywam w przyszłości 
-    po migracji całego systemu do symfony nastąpi. By nie tracić czasy wtedy kiedy nie miałem go zbyt wiele, postanowiłem pójść na kompromis. Zamiast pisać mobilną
-    wersję formularza postanowiłem napisać aplikację na Androida. Ponieważ wpadł mi go głowy pomysł by wykorzystać GPS w smartfonie do lokalizowania stacji mogilnych.
-    Wykorzystałem do tego celu bardzo łatwą platformę która służy co prawda do nauki programowania dla dzieci. Platforma ta pozwalała na wykorzystanie GPSa z urządzenia
-    do aktualizacji lokalizacji w tle przy zgaszonym ekranie by urządzenie nie zużywało zbyt wiele energi. Aplikacja jest dostępna w sklepie
+    po migracji całego systemu do symfony nastąpi. By nie tracić czasu wtedy kiedy nie miałem go zbyt wiele, postanowiłem pójść na kompromis. Zamiast pisać mobilną
+    wersję formularza postanowiłem napisać aplikację na Androida. Ponieważ wpadł mi go głowy pomysł by wykorzystać GPS w smartfonie do lokalizowania stacji mobilnych.
+    Wykorzystałem do tego celu bardzo łatwą platformę "MIT App Inventor", która służy do nauki programowania dla dzieci. 
+    Platforma ta pozwalała na wykorzystanie GPS z urządzenia do aktualizacji lokalizacji w tle przy zgaszonym ekranie by urządzenie nie zużywało zbyt wiele energii.
+    Aplikacja jest dostępna w sklepie
 
   description-07: |  
-    gdzie można bardziej szczegółowo zapoznać dię z aplikacją.
+    gdzie można bardziej szczegółowo zapoznać się z aplikacją. Aplikacja jest stale rozwijana i służy użytkownikom do dziś.
 
 
   volunteer-association-1:  Widok główny aplikacji
@@ -258,6 +262,10 @@ monitoring-whe-watchmans-work-page:
   title: Monitorowanie pracy stróża w firmie
   title-nav: Monitorowanie pracy stróża
   start-coding: Projekt rozpoczęty w 2024r.
+  description-01: |  
+
+
+
 
 information-about-this-site-page:
   title: Krótkie informacje o tej stronie 
@@ -273,4 +281,5 @@ information-about-this-site-page:
 
 repo: Link do repozytorium
 not-redy: Niebawem opis projektu będzie dostępny.
+links: Linki
 

@@ -184,6 +184,78 @@ volunteer-association-page:
   title-nav: Volunteer Association
   start-coding: Project started in 2020.
 
+  description-01: |
+    On this page we see two interesting elements, the first of which is the “orange carousel.” It shows the active stations, and in the absence of them 
+    the carousel shows the results of the year-long contest. The second interesting element is a map that shows radio communications from the last hour.
+    When you click on the station icon, you will see information about the communications and the linked radio sign. If there is a lot of activity, when there are a lot of connections on the map,
+    by clicking on the linked radio sign in the balloon, we will see the filtered communications of only that one station on the map, which can be seen in the images 
+    “Before filtering” and ‘After filtering’.
+
+  description-02: |
+    The login to the form is done using the forum. Originally the cluster was to be used only for club members, so I used a session variable for logging in
+    phpBB forum. The form handling is, of course, the classic “CRUD” (Create, Read, Update, Delete). Underneath there are more complicated mechanisms
+    such as the implementation of QSL cards (a picture in the form of a postcard confirming connectivity). These are downloadable directly from the cluster itself image “Cluster”.
+
+  description-03: |
+    In the cluster, in addition to downloadable cards, we can preview a given link on a map. Returning to the topic of the cluster form and what else is hidden underneath-.
+    in the Association there are sometimes all sorts of contests, graduation actions, activations, and here are needed mechanisms to handle these issues.
+    For this purpose, I created an administrative panel for initiating such events - image “Cluster administrative panel”.
+
+  description-04: |
+    The administration panel supports graduation actions, to which a QSL card special for the occasion can be assigned. Particularly troublesome in the structural code 
+    proved to be the handling of the ability to complete entries after the action is completed. Since the user needs time to add the last
+    communications after the graduation action time is over. Communications entered after the completed action with a date that falls within the action had to be accepted.
+    The image “Cluster Administration Panel” shows a table, in which the 'Uzup' column is visible, in this column are the number of hours spent
+    for completing outstanding entries.
+
+  description-05: |
+    In later graduation actions, as you can see, functionality was added consisting of differentiated scoring. The differentiated scoring depended on 
+    whether the communication was within the country, or outside the country where the station was stationed, or outside Europe. The rubrics 'Wob' meaning within one's own country,
+    'Poz', i.e. outside the country in which the station is stationed, and 'DX', i.e. communications going beyond Europe. Support for this functionality consisted in processing 
+    a string variable, an example of a character from the CB band, e.g. '161OS256' (that is, we have a string and look for an item in it that is not a number, we cut off the rest and we have a squadron number).
+    This number determines what country the station is broadcasting from, so all we had to do was enter the list of squadrons belonging to Europe into the base. And that's how the points were calculated.
+    If the respondent has a different squadron than mine then we check if he is on the list of European squadrons if yes:he gets 2 points and otherwise 3. 
+    Going back to the cluster form, in the early stages of development one of the first functionalities was to make it easier to locate the respondent. 
+
+  description-06: |
+    If the respondent belonged to a 
+    club and agreed to share the location of his station, then if the user entered the sign of such operator in the form, he received the information
+    'Locator in database'. This meant that the station's location was stored in the database and the respondent did not need to be asked where it was transmitting from.
+    The last important detail of the whole system that remained to be described in this project is the Android Application. Looking at the “QSO Form” one can imagine 
+    operating this form on the slim screen of a smartphone. Initially, I planned to write a version of the form for mobile devices. What I do not hide in the future 
+    after the migration of the whole system to symfony will take place. In order not to waste time then when I didn't have much of it, I decided to compromise. Instead of writing a mobile
+    version of the form I decided to write an application for Android. Because I got the idea to use the GPS in the smartphone to locate mobile stations.
+    For this I used a very easy platform “MIT App Inventor”, which is used to teach programming to children. 
+    This platform allowed me to use the GPS from the device to update the location in the background with the screen off so that the device would not consume too much power.
+    The app is available in the store
+
+  description-07: |
+    Where you can get to know the application in more detail. The application has been continuously developed and continues to serve users today.
+
+  volunteer-association-1:  Main view of the application
+  volunteer-association-2:  Before filtering
+  volunteer-association-3:  After filtering
+  volunteer-association-4:  Increased traffic in the national ether
+  volunteer-association-5:  QSO Form
+  volunteer-association-6:  Cluster
+  volunteer-association-7:  Cluster administration panel 
+  volunteer-association-8:  Increased traffic in the international ether 
+  volunteer-association-9:  Login screen
+  volunteer-association-10:  Application cluster form
+  volunteer-association-11:  Application settings
+  link-description: Link to video presentation of the application.
+
+
+
+
+
+
+
+
+
+
+
+
 monitoring-whe-watchmans-work-page:
   title: Monitoring the watchman's work in the company
   title-nav: Monitoring the watchman's work
