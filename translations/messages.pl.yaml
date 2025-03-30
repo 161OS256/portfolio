@@ -44,6 +44,13 @@ about-page:
     Napisałem program, który obsługuje przełącznik dzwonkowy jako punkt kontroli obecności stróża w danym miejscu i czasie sporządzając raport dostępny w telefonie 
     (w przeglądarce) z poza siedziby firmy. Program napisany w 2023 / 2024 działa i jest używany do dziś.
 
+  links: Linki
+  hobby: Moje Hobby
+  hobby-1: Pianino
+  hobby-2: Motocykle
+  hobby-3: Krótkofalarstwo 
+
+
 home-heating-page:
   title: Sterowanie ogrzewaniem domu.
   title-nav: Sterowanie ogrzewaniem
@@ -257,15 +264,11 @@ volunteer-association-page:
   volunteer-association-11:  Ustawienia aplikacji
   link-description: Link do video prezentacji aplikacji.
   
-
 monitoring-whe-watchmans-work-page:
   title: Monitorowanie pracy stróża w firmie
   title-nav: Monitorowanie pracy stróża
   start-coding: Projekt rozpoczęty w 2024r.
   description-01: |  
-
-
-
 
 information-about-this-site-page:
   title: Krótkie informacje o tej stronie 
@@ -281,5 +284,5 @@ information-about-this-site-page:
 
 repo: Link do repozytorium
 not-redy: Niebawem opis projektu będzie dostępny.
-links: Linki
+
 

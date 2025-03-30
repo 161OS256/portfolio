@@ -43,6 +43,12 @@ about-page:
     I wrote a program that operates the bell switch as a checkpoint for the watchman's presence at a given place and time making a report available on the phone 
     (in a browser) from off-site. The program written in 2023 / 2024 works and is still used today.
 
+  links: Links
+  hobby: My Hobby
+  hobby-1: Piano
+  hobby-2: Motorcycles
+  hobby-3: Ham radio
+
 home-heating-page:
   title: Home heating control.
   title-nav: Home heating
@@ -244,17 +250,6 @@ volunteer-association-page:
   volunteer-association-10:  Application cluster form
   volunteer-association-11:  Application settings
   link-description: Link to video presentation of the application.
-
-
-
-
-
-
-
-
-
-
-
 
 monitoring-whe-watchmans-work-page:
   title: Monitoring the watchman's work in the company

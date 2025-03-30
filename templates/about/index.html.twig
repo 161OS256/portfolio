@@ -1,9 +1,10 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+{% set number_of_images  = 3 %}
 <center><h1>{{'about-page.title' |trans}}</h1></center>
 
-<div class="container intro mt-4">
+<div class="row">
     <p>{{'about-page.description-01'|trans}}<br>
     <a href="{{ path('home-heating_index')}}"> {{'home-heating-page.title' |trans}}</a></p>
     <p>{{'about-page.description-02'|trans}}</br>
@@ -13,9 +14,21 @@
     <p>{{'about-page.description-04'|trans}}</br>
     <a class="off" href="{{ path('monitoring-whe-watchmans-work_index')}}"> {{'monitoring-whe-watchmans-work-page.title' |trans}}</a></p>
 
-    <p>{{'links'|trans}}</br>
+    <p>{{'about-page.links'|trans}}</br>
     <a href="https://github.com/161OS256" target="blank"> https://github.com/161OS256</a><br>
     <a href="https://www.linkedin.com/in/marek-bartocha-b1a82229b/" target="blank"> https://www.linkedin.com/in/marek-bartocha-b1a82229b/</a></p>
+
+    <p>{{'about-page.hobby'|trans}}</br>
+
+    <div class="col-12 col-md-6 col-xl-4 m-auto text-center">
+        <center>{{'about-page.hobby-1'|trans}}</center>
+    </div>  
+    <div class="col-12 col-md-6 col-xl-4 m-auto text-center">
+        <center>{{'about-page.hobby-2'|trans}}</center>
+    </div>  
+    <div class="col-12 col-md-6 col-xl-4 m-auto text-center">
+        <center>{{'about-page.hobby-3'|trans}}</center>
+    </div>  
 </div>
 
 
