@@ -255,6 +255,28 @@ monitoring-whe-watchmans-work-page:
   title: Monitoring the watchman's work in the company
   title-nav: Monitoring the watchman's work
   start-coding: Project started in 2024.
+  description-01: |  
+    This is by far the smallest project I have done not counting the projects done while learning from various courses.
+    I made the project in Pascal language in the “Delphi 7” environment. The task was relatively simple from the coding side, it was enough to write a 
+    program that would handle the com port and receive signals from the appropriate pins. I made the electronics myself, which handled the 
+    the control point. The system consisted of 2 bell switches mounted in the company, each switch had a light that 
+    began to flicker when it was time to make the rounds. Then a button had to be pressed, the program from the moment the flickering light was activated,
+    began listening on the com port in a loop at 1 sec intervals. When the button was pressed, the program picked up the signal after which it 
+    deactivated the lamp flicker. Before the next round before the next time the lamp flicker was activated, the program checked the status of the port,
+    whether the switch contacts were open (in case the watchman got the idea to immobilize the button permanently in the pressed position).
+    In such a case, such an event was noted in the report. 
+    
+  description-02: |
+    The logic of the program relied on a timer, as the original plan was to celebrate every hour, cyclically.
+    Every hour there was an activation of a flickering light for a specified period of time. If the button was pressed within the specified time, the celebration was credited,
+    otherwise, the rounds - not credited (which was noted in the report). In addition, the system was equipped with an orange flickering light
+    located in such a way as to be visible from the gatehouse, the light was activated only when there was little time left for rounds.
+    as a reminder. After launching the system, I received information that there was no need to make rounds every hour, so I added to the interface
+    24 check boxes so that the company could set which hours to make rounds.
+
+  description-03: |
+    The program is equipped with a mini server that allows viewing an HTML file with a list of reports by date. A new report with a new date is generated every day.
+    The owner of the company can access the report on his phone from off-site.
 
 information-about-this-site-page:
   title: Brief information about this site 

@@ -40,7 +40,7 @@ about-page:
   description-04: |
     Kolejny projekt malutki ale dla mnie ważny bo to mój pierwszy projekt dla firmy, która potrzebowała rozwiązania do monitorowania pracy stróża w firmie. Na 
     rynku oczywiście było wiele rozwiązań ale wszystkie wymagały obsługi przez pracownika (czytniki do odbijania punktów kontrolnych) wymaganie było takie aby
-    system był prosty w obsłudze i by stróż nie mógł go obejść ani zepsuć (czytnik można upuścić na ziemię i może ulec uszkodzeniu). Postanowiłem napisać aplikację.
+    system był prosty w obsłudze i by stróż nie mógł go obejść ani zepsuć (czytnik można upuścić na ziemię i może ulec uszkodzeniu). 
     Napisałem program, który obsługuje przełącznik dzwonkowy jako punkt kontroli obecności stróża w danym miejscu i czasie sporządzając raport dostępny w telefonie 
     (w przeglądarce) z poza siedziby firmy. Program napisany w 2023 / 2024 działa i jest używany do dziś.
 
@@ -269,6 +269,27 @@ monitoring-whe-watchmans-work-page:
   title-nav: Monitorowanie pracy stróża
   start-coding: Projekt rozpoczęty w 2024r.
   description-01: |  
+    Jest to zdecydowanie najmniejszy projekt, który wykonałem nie licząc projektów wykonanych podczas nauki z różnych kursów.
+    Projekt wykonałem w języku Pascal w środowisku "Delphi 7". Zadanie było stosunkowo proste od strony kodowania, wystarczyło napisać 
+    program, który obsłuży port com i odbierze z odpowiednich pinów sygnały. Elektronikę wykonałem samodzielnie, która obsługiwała 
+    punkt kontrolny. System składa się z 2 włączników dzwonkowych zamontowanych w firmie, każdy włącznik posiadał światełko, które 
+    zaczynało migotać gdy przyszła pora na obchód. Wtedy należało nacisnąć przycisk, program od momentu aktywowania migotania lampki,
+    zaczął nasłuch na porcie com w pętli w odstępie czasowym co 1 sek. Gdy przycisk został naciśnięty, program odebrał sygnał po czym 
+    dezaktywował migotanie lampki. Przed kolejnym obchodem zanim kolejny raz migotanie lampki zostało aktywowane, program sprawdzał stan portu,
+    czy styki przełącznika są rozwarte (na wypadek gdyby stróż wpadł na pomysł by unieruchomić przycisk na stałe w pozycji wciśniętej).
+    W takim przypadku takie zdarzenie było odnotowane w raporcie. 
+    
+  description-02: |
+    Logika programu polegała na timerze, ponieważ pierwotnie planowano obchody co godzinę, cyklicznie.
+    Co godzinę następowała aktywacja migotania lampki na określony czas. Jeśli w określonym czasie przycisk został naciśnięty obchód został zaliczony,
+    w przeciwnym wypadku obchód - niezaliczony (co zostało w raporcie odnotowane). Dodatkowo system był wyposażony w pomarańczowe migoczące światło
+    usytuowane w taki sposób by było widoczne z portierni, światło było aktywowane tylko wtedy gdy zostało już niewiele czasu na obchód
+    celem przypomnienia. Po uruchomieniu systemu dostałem informację, że nie ma potrzeby robienia obchodów co godzinę, więc dodałem do interfejsu
+    24 check boksy by firma mogła ustawiać, w których godzinach mają być realizowane obchody.
+
+  description-03: |
+    Program jest wyposażony w mini serwer umożliwiający podgląd pliku HTML z listą raportów według dat. Codziennie generowany jest nowy raport z nową datą.
+    Właściciel firmy ma dostęp do raportu w telefonie po za siedzibą firmy.
 
 information-about-this-site-page:
   title: Krótkie informacje o tej stronie 
