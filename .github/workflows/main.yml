@@ -1,21 +1,44 @@
+name: Symfony CI/CD
+
 on:
   push:
-    branches: [main]
-name: 🚀 Deploy
+    branches:
+      - learning-CI/CD
+  pull_request:
+    branches:
+      - learning-CI/CD
 
 jobs:
-  web-deploy:
-    name: 🎉 Deploy
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: 🚚 Get latest code
-        uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-      - name: 📂 Sync files
-        uses: ./
-
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
         with:
-          server: ftp.marekbal.joton.dev
-          username: marek-bartocha@marekbal.joton.dev
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: public_html/
+          php-version: '8.1'  # Specify the PHP version you need
+          extensions: mbstring, intl, sqlite, bcmath, opcache  # Add any PHP extensions you need
+          coverage: xdebug
+
+      - name: Install Composer
+        run: |
+          curl -sS https://getcomposer.org/installer | php
+          mv composer.phar /usr/local/bin/composer
+
+      - name: Install dependencies
+        run: composer install --no-interaction --prefer-dist
+
+      - name: Set up the database
+        run: |
+          cp .env.example .env
+          php bin/console doctrine:database:create --env=test
+          php bin/console doctrine:schema:create --env=test
+
+      - name: Run Symfony Tests
+        run: |
+          php bin/console doctrine:fixtures:load --env=test --no-interaction
+          ./vendor/bin/phpunit --configuration phpunit.xml.dist
+

@@ -74,6 +74,7 @@
     },
     "require-dev": {
         "doctrine/doctrine-fixtures-bundle": "^4.0",
+        "phpunit/phpunit": "^10",
         "symfony/maker-bundle": "^1.62",
         "symfony/stopwatch": "6.4.*",
         "symfony/web-profiler-bundle": "6.4.*"
