@@ -1,4 +1,0 @@
-
-https://www.youtube.com/watch?app=desktop&v=i_jgWZItCGI&t=0s
-
-https://symfony.com/doc/current/session.html#flash-messages
