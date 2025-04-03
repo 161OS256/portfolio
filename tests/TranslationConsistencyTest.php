@@ -1,46 +1,51 @@
 <?php
-// tests/TranslationConsistencyTest.php
-namespace App\Tests;
+use Symfony\Component\Yaml\Yaml;
 
-use PHPUnit\Framework\TestCase;
-use Symfony\Component\Translation\Translator;
-use Symfony\Component\Translation\Loader\YamlFileLoader;
-use Symfony\Component\Translation\Writer\TranslationWriter;
-
-class TranslationConsistencyTest extends TestCase
+class TranslationConsistencyTest extends \PHPUnit\Framework\TestCase
 {
-    private $translator;
+    private $plTranslations;
+    private $enTranslations;
 
     protected function setUp(): void
     {
-        // Tworzymy instancję tłumacza
-        $this->translator = new Translator('en'); // Domyślny język to angielski
-        $this->translator->addLoader('yaml', new YamlFileLoader());
-
-        // Ładujemy pliki tłumaczeń
-        $this->translator->addResource('yaml', __DIR__.'/../translations/messages.pl.yaml', 'pl');
-        $this->translator->addResource('yaml', __DIR__.'/../translations/messages.en.yaml', 'en');
+        // Wczytanie plików YAML do tablic
+        $this->plTranslations = Yaml::parseFile(__DIR__ . '/../translations/messages.pl.yaml');
+        $this->enTranslations = Yaml::parseFile(__DIR__ . '/../translations/messages.en.yaml');
     }
 
     public function testTranslationFilesConsistency()
     {
-        // Pobieramy klucze tłumaczeń z obu plików
-        $plCatalog = $this->getTranslationCatalog('pl');
-        $enCatalog = $this->getTranslationCatalog('en');
+        $plKeys = $this->getAllKeys($this->plTranslations);
+        $enKeys = $this->getAllKeys($this->enTranslations);
+    
+        // Debugowanie, co dokładnie jest różne
+        $missingInPl = array_diff($enKeys, $plKeys);
+        $missingInEn = array_diff($plKeys, $enKeys);
 
-        // Sprawdzamy, czy klucze są spójne między plikiem PL i EN
-        $missingInPl = array_diff_key($enCatalog, $plCatalog);
-        $missingInEn = array_diff_key($plCatalog, $enCatalog);
-
-        // Jeśli którykolwiek z tych zbiorów nie jest pusty, test się nie powiedzie
-        $this->assertEmpty($missingInPl, "Brakuje kluczy w pliku tłumaczenia PL: " . implode(", ", array_keys($missingInPl)));
-        $this->assertEmpty($missingInEn, "Brakuje kluczy w pliku tłumaczenia EN: " . implode(", ", array_keys($missingInEn)));
+        echo "Klucze w pliku polskim: ";
+        var_dump($missingInPl);
+        
+        echo "Klucze w pliku angielskim:";
+        var_dump($missingInEn);
+    
+        // Test: Brakujące klucze w pliku polskim
+        $this->assertEmpty($missingInPl, 'Brakuje kluczy w pliku tłumaczenia dla języka polskiego: ' . implode(', ', $missingInPl));
+        // Test: Brakujące klucze w pliku angielskim
+        $this->assertEmpty($missingInEn, 'Brakuje kluczy w pliku tłumaczenia dla języka angielskiego: ' . implode(', ', $missingInEn));
     }
-
-    private function getTranslationCatalog(string $locale): array
+    
+    // Funkcja do rekurencyjnego zbierania wszystkich kluczy z tablicy
+    private function getAllKeys(array $array, $prefix = '')
     {
-        // Pobiera wszystkie klucze tłumaczeń dla danego języka
-        $catalog = $this->translator->getCatalogue($locale);
-        return $catalog->all();
+        $keys = [];
+        foreach ($array as $key => $value) {
+            $newKey = $prefix ? $prefix . '.' . $key : $key;
+            if (is_array($value)) {
+                $keys = array_merge($keys, $this->getAllKeys($value, $newKey));
+            } else {
+                $keys[] = $newKey;
+            }
+        }
+        return $keys;
     }
 }
