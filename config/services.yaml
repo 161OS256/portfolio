@@ -26,3 +26,7 @@ services:
     App\EventListener\LocaleRedirectListener:
         tags:
             - { name: kernel.event_listener, event: kernel.request, priority: 100 }
+
+    App\EventListener\BotLoggerListener:
+        tags:
+            - { name: kernel.event_listener, event: kernel.request }
