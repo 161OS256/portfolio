@@ -5,7 +5,7 @@ name: 🚀 Deploy
 
 jobs:
   web-deploy:
-    name: 🎉 Deploy
+    name: 🎉 Deploy portfolio
     runs-on: ubuntu-latest
     steps:
       - name: 🚚 Get latest code
