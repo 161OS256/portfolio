@@ -1,7 +1,7 @@
 on:
   push:
     branches: [main]
-name: 🚀 Deploy main on push
+name: 🚀 Deploy
 
 jobs:
   web-deploy:
