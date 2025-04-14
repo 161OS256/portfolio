@@ -17,5 +17,5 @@ jobs:
         with:
           server: ftp.serwer00.webd.pl
           username: serwer00
-          password: ${{ secrets.FTP_PASSWORD }}
+          password: ${{ secrets.WEBD_PASWORD }}
           server-dir: public_html/marek.bal/
