@@ -11,6 +11,8 @@ home-page:
   more: Read more
   less: Read less
   technologies: Technologies Used
+  github: See code on GitHub 
+  project: See project description
 
 about-page:
   title: A few words about me
@@ -289,6 +291,16 @@ information-about-this-site-page:
     Frontend - Bootstrap: In the project I used Bootstrap to build responsive and aesthetically pleasing user interfaces.
     Thanks to Bootstrap, the app adapts to different screen sizes,
     which provides an optimal experience on mobile devices, tablets and desktops. 
+
+qrz-page:
+  title: QRZ Oscar Sierra
+  title-nav: QRZ Oscar Sierra
+  start-coding: Project started in 2025
+  description-01: I am just working on the description of this project.
+
+
+
+
 
 repo: Link to repository
 not-redy: A description of the project will be available soon.

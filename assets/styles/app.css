@@ -1,6 +1,6 @@
 body {
     background-color: rgb(104, 109, 103);
-    color: #2f372e;
+    color: #c8ced4;
     padding-top: 60px; 
     text-align: justify;
     display: flex;
@@ -144,12 +144,22 @@ img {
     pointer-events: none; /* blokuje kliknięcie */
     color:  rgb(157, 157, 157); /* zmienia kolor tekstu */
     text-decoration: none; /* usuwa podkreślenie */
-  }
+}
+
 .img-standard {
     width: 350px;
     height: 300px;
 }
-
+ 
+.no-picture {
+    max-width: 400px;
+    height: 200px;
+    border: 2px solid wheat;
+    border-radius: 15px;
+    margin: 23px auto 25px auto;
+    background-color: #485e56;
+    padding-top: 35px;
+}
 
 @media screen and (max-width: 768px) {
 .intro {

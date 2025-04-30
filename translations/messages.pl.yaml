@@ -11,6 +11,8 @@ home-page:
   more: Czytaj więcej
   less: Czytaj mniej
   technologies: Wykorzystane Technologie
+  github: Zobacz kod na GitHub 
+  project: Zobacz opis projektu 
   
 
 about-page:
@@ -302,6 +304,18 @@ information-about-this-site-page:
     Frontend – Bootstrap: W projekcie wykorzystałem Bootstrap do budowy responsywnych i estetycznych interfejsów użytkownika.
     Dzięki Bootstrapowi aplikacja dostosowuje się do różnych rozmiarów ekranów,
     co zapewnia optymalne doświadczenie na urządzeniach mobilnych, tabletach i komputerach stacjonarnych. 
+
+qrz-page:
+  title: QRZ Oscar Sierra
+  title-nav: QRZ Oscar Sierra
+  start-coding: Projekt rozpoczęty w 2025r.
+  description-01: Właśnie pracuję nad opisem tego projektu.
+
+
+
+
+
+
 
 repo: Link do repozytorium
 not-redy: Niebawem opis projektu będzie dostępny.
