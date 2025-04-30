@@ -309,7 +309,19 @@ qrz-page:
   title: QRZ Oscar Sierra
   title-nav: QRZ Oscar Sierra
   start-coding: Projekt rozpoczęty w 2025r.
-  description-01: Właśnie pracuję nad opisem tego projektu.
+  description-01: Witryna ta służy do tworzenia wizytówek radioamatorów lub pasjonatów łączności radiowych gdzie inni radio amatorzy, pasjonaci
+    mogą wyszukać usłyszaną stację w eterze. Na takiej wizytówce użytkownik morze zamieścić zdjęcie profilowe dane adresowe jeśli chce otrzymywać 
+    tradycyjne papierowe kary qsl. Witryna posiada system logowania, rejestracji z linkiem aktywacyjnym w mailu oraz procedurę odzyskiwania hasła.
+    Aktualnie jeszcze trwają debaty w stowarzyszeniu nad zawartością strony domowej bo w prawdzie głównym celem witryny jest wyszukiwarka wizytówek. 
+
+  description-02:
+    Mimo trwającej debaty nad treścią strony głównej witryna jest już dostępna, by użytkownicy mogli sobie już tworzyć wizytówki. 
+    Użytkownik w swoim profilu dysponuje narzędziami do tworzenia i edycji swojej wizytówki. Tworzenie wizytówki odbywa się na 
+
+
+  qrz-1: Panel edycji profilu
+  qrz-2: Dalsza część edycji profilu 
+  qrz-3: Widok po wyszukaniu w wyszukiwarce 
 
 
 
