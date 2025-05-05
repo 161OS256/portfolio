@@ -4,6 +4,34 @@
      body {
         padding-top: 0;
     }
+
+    .compsoul-slide-close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        background: rgba(70, 70, 70, 0.6);
+        border: none;
+        border-radius: 50%;
+        font-size: 26px;
+        color: white;
+        z-index: 999;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+        padding: 0;
+    }
+
+    .compsoul-slide-close:hover {
+        background: rgba(54, 54, 53, 0.85);
+    }
+
+    .compsoul-slider {
+        position: relative;
+    }
     </style>
 {% endblock %}
 
@@ -13,25 +41,29 @@
  {# <center>{{(folder ~'-page.'~ folder ~'-'~ id)|trans}}</center> #}
 <div class="compsoul-slider compsoul-slider-fade">
 
-        {% for i in 1.. number %}
-             <article class="compsoul-slide">
-                <figure class="compsoul-slide-figure">
-                <img class="compsoul-slide-img" alt="Zdjęcie slajdu" 
-                    src="{{ asset('img/' ~ folder ~ '/' ~ id ~ '.png') }}"
-                    data-src="{{ asset('img/' ~ folder ~ '/' ~ id ~ '.png') }}"
-                >
-                <noscript>
-                    <img class="compsoul-slide-noscript" src="{{ asset('img/' ~ folder ~ '/' ~ id ~ '.png') }}" alt="Zdjęcie slajdu">
-                </noscript>
-                </figure>
-            </article>
-            {% set id = (id + 1) %}
+    <button class="compsoul-slide-close" onclick="window.history.back()">
+        &times;
+    </button>
 
-            {% if id > number %}
-                {% set id = 1 %}
-            {% endif %}
+    {% for i in 1.. number %}
+            <article class="compsoul-slide">
+            <figure class="compsoul-slide-figure">
+            <img class="compsoul-slide-img" alt="Zdjęcie slajdu" 
+                src="{{ asset('img/' ~ folder ~ '/' ~ id ~ '.png') }}"
+                data-src="{{ asset('img/' ~ folder ~ '/' ~ id ~ '.png') }}"
+            >
+            <noscript>
+                <img class="compsoul-slide-noscript" src="{{ asset('img/' ~ folder ~ '/' ~ id ~ '.png') }}" alt="Zdjęcie slajdu">
+            </noscript>
+            </figure>
+        </article>
+        {% set id = (id + 1) %}
 
-        {% endfor %}
+        {% if id > number %}
+            {% set id = 1 %}
+        {% endif %}
+
+    {% endfor %}
 
 
   <nav class="compsoul-slide-navigation">
