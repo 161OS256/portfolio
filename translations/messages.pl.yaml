@@ -309,24 +309,43 @@ qrz-page:
   title: QRZ Oscar Sierra
   title-nav: QRZ Oscar Sierra
   start-coding: Projekt rozpoczęty w 2025r.
-  description-01: Witryna ta służy do tworzenia wizytówek radioamatorów lub pasjonatów łączności radiowych gdzie inni radio amatorzy, pasjonaci
-    mogą wyszukać usłyszaną stację w eterze. Na takiej wizytówce użytkownik morze zamieścić zdjęcie profilowe dane adresowe jeśli chce otrzymywać 
-    tradycyjne papierowe kary qsl. Witryna posiada system logowania, rejestracji z linkiem aktywacyjnym w mailu oraz procedurę odzyskiwania hasła.
-    Aktualnie jeszcze trwają debaty w stowarzyszeniu nad zawartością strony domowej bo w prawdzie głównym celem witryny jest wyszukiwarka wizytówek. 
+  description-01: |
+    Witryna ta kierowana jest dla pasjonatów łączności radiowych. 
+    Jej celem jest stworzenie bazy jak największej ilości wizytówek pasjonatów łączności radiowej z całego świata. 
+    Użytkownik po zalogowaniu się do systemu może stworzyć wizytówkę, która będzie widoczna w wyszukiwarce wizytówek 
+    (w przyszłości także w aplikacji mobilnej). Wizytówka to nic innego jak wizytówka elektroniczna, która zawiera dane użytkownika 
+    takie jak znak wywoławczy, imię, lokalizacja, adres e-mail oraz inne dane kontaktowe. 
+    Użytkownik może edytować swoją wizytówkę dodać opis radiostacji i anteny wraz ze zdjęciami można także edytować swój znak wywoławczy oraz imię.
+  
+  description-02: | 
+    Wizytówka jest widoczna w wyszukiwarce wizytówek, która pozwala na wyszukiwanie wizytówek według znaku wywoławczego.
+    Tworzenie wizytówki jest bardzo proste i intuicyjne. Po zalogowaniu się do systemu użytkownik klika przycisk "Edytuj widok" dodaje bloki z tytułem i treścią.
+    Pierwszy blok jest blokiem reprezentacyjnym, który zawiera dane użytkownika takie jak imię, znak wywoławczy który jest automatycznie pobierany z bazy danych 
+    i umieszczany jako nagłówek wizytówki. Tytuł i treść wprowadzone podczas tworzenia pierwszego bloku są pozycjonowane po lewej stronie bloku. 
+    Można tam zamieścić informacje np. QTH Locator stacji lub dane adresowe. 
 
-  description-02:
-    Mimo trwającej debaty nad treścią strony głównej witryna jest już dostępna, by użytkownicy mogli sobie już tworzyć wizytówki. 
-    Użytkownik w swoim profilu dysponuje narzędziami do tworzenia i edycji swojej wizytówki. Tworzenie wizytówki odbywa się na 
+  description-03: |
+    W pierwszym bloku można także zamieścić tylko jedno zdjęcie jako profilowe. 
+    W kolejnych blokach można zamieścić tytuł i opis radiostacji lub anteny oraz dodać maksymalnie trzy zdjęcia wraz z krótkim opisem do jednego bloku.
+    Aby dodać zdjęcie do bloku pierw należy je przesłać na serwer. Ukaże się wtedy miniaturka zdjęcia po prawej stronie panelu edycji, które można dodać do bloku. 
+    Dodanie zdjęcia do bloku odbywa się poprzez zaznaczenie checkbox zdjęcia oraz kliknięcie przycisku w danym bloku "Dodaj zaznaczone zdjęcie".
+    Użytkownik może dodać maksymalnie 15 zdjęć do wizytówki. Liczba bloków wizytówki nie jest ograniczona.
+    
+  description-04: |
+    Po dodaniu wizytówki użytkownik może edytować wizytówkę, zmieniać zdjęcia, dodawać nowe bloki oraz edytować istniejące bloki.
+    Po wyszukaniu znaku wywoławczego w wyszukiwarce, użytkownik może wybrać z listy wyników interesującą go stację i przejść do jej wizytówki.
+    Po kliknięciu zdjęcia na wizytówce użytkownika, uruchamiany jest podgląd slajdów zdjęć w pełnym rozmiarze.
+  
+  description-05: |
+    Projekt jest napisany w Symfony 6.4 w języku PHP.
+    Wykorzystuje bazę danych MySQL do przechowywania wizytówek oraz zdjęć.
+    Projekt posiada system logowania i rejestracji użytkowników z linkiem aktywacyjnym na maila oraz system resetowania hasła.
+    Zastosowałem Klasycznego CRUD (Create, Read, Update, Delete) do zarządzania wizytówkami.
 
-
-  qrz-1: Panel edycji profilu
-  qrz-2: Dalsza część edycji profilu 
-  qrz-3: Widok po wyszukaniu w wyszukiwarce 
-
-
-
-
-
+  qrz-association-1: Panel użytkownika
+  qrz-association-2: Edycja wizytówki
+  qrz-association-3: Dodawanie zdjęcia do wizytówki
+  qrz-association-4: Wizytówka w wyszukiwarce
 
 
 repo: Link do repozytorium

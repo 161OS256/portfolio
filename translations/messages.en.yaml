@@ -296,11 +296,44 @@ qrz-page:
   title: QRZ Oscar Sierra
   title-nav: QRZ Oscar Sierra
   start-coding: Project started in 2025
-  description-01: I am just working on the description of this project.
+  description-01: |
+    This site is directed to radio communications enthusiasts. 
+    Its purpose is to create a database of as many business cards as possible of radio communications enthusiasts from around the world. 
+    The user, after logging into the system, can create a business card, which will be visible in the business card search engine 
+    (in the future also in the mobile application). A business card is nothing more than an electronic business card that contains the user's 
+    data such as call sign, name, location, email address and other contact information. 
+    The user can edit his business card to add a description of the radio station and antenna along with photos you can also edit your callsign and name.
+
+  description-02: | 
+    The business card is visible in the business card search engine, which allows you to search for business cards by call sign.
+    Creating a business card is very simple and intuitive. After logging into the system, the user clicks the "Edit View" button to add blocks with title and content.
+    The first block is a representative block, which contains the user's data such as name, call sign which is automatically retrieved from the database 
+    and placed as the header of the business card. The title and content entered during the creation of the first block are positioned on the left side of the block. 
+    Information such as the station's QTH Locator or address details can be included there. 
+
+  description-03: |
+    In the first block, you can also include only one photo as a profile picture. 
+    In the following blocks, you can include the title and description of the radio station or antenna, and add up to three photos with a short description to one block.
+    To add a photo to a block you first need to upload it to the server. A thumbnail of the photo on the right side of the editing panel will then appear, which can be added to the block. 
+    Adding a photo to a block is done by checkboxing the photo and clicking the button in the block "Add selected photo".
+    The user can add a maximum of 15 photos to the business card. The number of business card blocks is not limited.
+
+  description-04: |
+    After adding a business card, the user can edit the business card, change pictures, add new blocks and edit existing blocks.
+    After searching for a call sign in the search engine, the user can select the station of interest from the list of results and go to its business card.
+    When a photo is clicked on the user's business card, a full-size slide preview of the photos is launched.
+
+  description-05: |
+    The project is written in Symfony 6.4 in PHP.
+    It uses a MySQL database to store business cards and photos.
+    The project has a user login and registration system with an activation link to email and a password reset system.
+    I used Classic CRUD (Create, Read, Update, Delete) to manage the business cards.
 
 
-
-
+  qrz-association-1: User panel
+  qrz-association-2: Editing a business card
+  qrz-association-3: Adding a photo to a business card
+  qrz-association-4: Search business card
 
 repo: Link to repository
 not-redy: A description of the project will be available soon.
