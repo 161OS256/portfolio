@@ -16,34 +16,33 @@ home-page:
 
 about-page:
   title: A few words about me
+
   description-01: |
-    My adventure with programming began in late 2015 / early 2016 when I was looking for a solution to control my home heating.
-    There were ready-made solutions available on the market but they were available with the latest heating systems.
-    I have an older generation heating system and could not find a suitable solution.
-    I decided to write my own program that would meet my needs.
-    This program still works today and is constantly being developed.
+    My adventure with programming began in late 2015/2016, when I was looking for a solution to control heating at home.
+    The systems available on the market were integrated with modern heating systems, and I had an older system. 
+    So I decided to create my own program tailored to my needs. This system still works today and is still being developed.
 
   description-02: |
-    Over time, more needs arose and another project was created that made my life easier in my professional work, working as an international driver
-    I had seemingly simple but time-consuming duties such as writing reports of lists of entries and exits from each country (EU requirements), which I decided to automate
-    and wrote an application that helped me with this and, by the way, kept track of work and rest times at a time when digital tachographs were just entering the market
-    and everything had to be noted down manually in a notebook and still remember the time of work and rest in the last 28 days giving shortened weekly rests
-    and many other duties that had to be fulfilled. I used this application from the beginning of 2016 until the end of 2024.
+    Over time, other needs arose. As an international driver, I had to create time-consuming daily reports of 
+    trips through various countries in accordance with EU regulations. I decided to automate this process and created an application to manage working time, 
+    rest and documentation. I used it from 2016 until the end of 2024.
+
 
   description-03: |
-    The next step in the programming adventure was to start volunteering at what used to be a club now called the Association of Radio Communications Enthusiasts.
-    At the club, I volunteered to help myself because the club's 10th anniversary was approaching and I wanted to help organize a graduation campaign to mark the occasion.
-    The club needed a home page where information about the upcoming anniversary and graduation campaign could be seen, as well as a cluster 
-    (a form for entering established communications and a mechanism for counting points for established communications) 
-    initially, due to lack of time and knowledge, I quickly set up the site on a ready-made template to gain time to build the cluster and the mechanism for counting points
-    after the completion of the graduation campaign, I decided to write my own system for managing the club's website, and that's how the system was created, which still works today and is being developed.
+    The next step was volunteering at the Association of Radio Communications Enthusiasts, where I helped create a system for the 10th anniversary graduation campaign. 
+    I prepared an information page and a so-called "cluster" - a form for recording radio communications and a mechanism for counting points. 
+    After the action, I wrote my own CMS system for managing the association's website, which is still working and being developed today.
 
   description-04: |
-    Another project tiny but important to me because this is my first project for a company that needed a solution to monitor the work of a watchman in the company. On the 
-    Of course, there were many solutions on the market, but all of them required operation by an employee (readers for bouncing checkpoints) the requirement was that the
-    system be easy to use and that the watchman could not bypass it or break it (the reader can be dropped on the ground and can be damaged). I decided to write an application.
-    I wrote a program that operates the bell switch as a checkpoint for the watchman's presence at a given place and time making a report available on the phone 
-    (in a browser) from off-site. The program written in 2023 / 2024 works and is still used today.
+    In 2023/2024 I completed my first project for the company - a simple but practical system for monitoring the work of the watchman. 
+    The main requirement was to create a reliable, almost “indestructible” solution that does not require active maintenance (such as bouncing RFID tags) from the employee. 
+    I wrote a bell-switch-based application that records the watchman's presence at a given place and time, with reports available remotely in a browser.
+  
+  description-05: |
+    I am currently developing as a novice developer, focusing on working with PrestaShop. I am learning the mechanics of the platform, the structure of the modules, 
+    the template system and the possibilities of its expansion. I want to create practical solutions for the e-commerce industry and develop my programming skills in 
+    technologies such as PHP, Symfony, MySQL, HTML, CSS and JavaScript.
+
 
   links: Links
   hobby: My Hobby
