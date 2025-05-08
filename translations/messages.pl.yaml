@@ -306,37 +306,41 @@ qrz-page:
   title-nav: QRZ Oscar Sierra
   start-coding: Projekt rozpoczęty w 2025r.
   description-01: |
-    Witryna ta kierowana jest dla pasjonatów łączności radiowych. 
-    Jej celem jest stworzenie bazy jak największej ilości wizytówek pasjonatów łączności radiowej z całego świata. 
-    Użytkownik po zalogowaniu się do systemu może stworzyć wizytówkę, która będzie widoczna w wyszukiwarce wizytówek 
-    (w przyszłości także w aplikacji mobilnej). Wizytówka to nic innego jak wizytówka elektroniczna, która zawiera dane użytkownika 
-    takie jak znak wywoławczy, imię, lokalizacja, adres e-mail oraz inne dane kontaktowe. 
-    Użytkownik może edytować swoją wizytówkę dodać opis radiostacji i anteny wraz ze zdjęciami można także edytować swój znak wywoławczy oraz imię.
+    Witryna skierowana jest do pasjonatów łączności radiowej. Jej celem jest stworzenie bazy wizytówek entuzjastów z całego świata.
+
+    Po zalogowaniu się do systemu użytkownik może stworzyć elektroniczną wizytówkę, która będzie widoczna w wyszukiwarce wizytówek 
+    (a w przyszłości również w aplikacji mobilnej). Wizytówka zawiera dane użytkownika, takie jak znak wywoławczy, imię, lokalizacja, 
+    adres e-mail oraz inne informacje kontaktowe.
+
   
   description-02: | 
-    Wizytówka jest widoczna w wyszukiwarce wizytówek, która pozwala na wyszukiwanie wizytówek według znaku wywoławczego.
-    Tworzenie wizytówki jest bardzo proste i intuicyjne. Po zalogowaniu się do systemu użytkownik klika przycisk "Edytuj widok" dodaje bloki z tytułem i treścią.
-    Pierwszy blok jest blokiem reprezentacyjnym, który zawiera dane użytkownika takie jak imię, znak wywoławczy który jest automatycznie pobierany z bazy danych 
-    i umieszczany jako nagłówek wizytówki. Tytuł i treść wprowadzone podczas tworzenia pierwszego bloku są pozycjonowane po lewej stronie bloku. 
-    Można tam zamieścić informacje np. QTH Locator stacji lub dane adresowe. 
+    Użytkownik może edytować swoją wizytówkę, dodając opis radiostacji i anteny wraz ze zdjęciami. Możliwa jest również edycja znaku wywoławczego oraz imienia.
+
+    Wizytówka jest widoczna w wyszukiwarce, która umożliwia wyszukiwanie według znaku wywoławczego. Tworzenie wizytówki jest proste i intuicyjne. 
+    Po zalogowaniu się do systemu użytkownik klika przycisk „Edytuj widok” i dodaje bloki z tytułem i treścią.
+
 
   description-03: |
-    W pierwszym bloku można także zamieścić tylko jedno zdjęcie jako profilowe. 
-    W kolejnych blokach można zamieścić tytuł i opis radiostacji lub anteny oraz dodać maksymalnie trzy zdjęcia wraz z krótkim opisem do jednego bloku.
-    Aby dodać zdjęcie do bloku pierw należy je przesłać na serwer. Ukaże się wtedy miniaturka zdjęcia po prawej stronie panelu edycji, które można dodać do bloku. 
-    Dodanie zdjęcia do bloku odbywa się poprzez zaznaczenie checkbox zdjęcia oraz kliknięcie przycisku w danym bloku "Dodaj zaznaczone zdjęcie".
-    Użytkownik może dodać maksymalnie 15 zdjęć do wizytówki. Liczba bloków wizytówki nie jest ograniczona.
+    Pierwszy blok jest blokiem reprezentacyjnym – zawiera dane użytkownika (imię, znak wywoławczy automatycznie pobierany z bazy danych i wyświetlany jako nagłówek). 
+    Tytuł i treść tego bloku są pozycjonowane po lewej stronie. Można tam umieścić np. lokator QTH lub dane adresowe.
+
+    W tym bloku można również dodać jedno zdjęcie profilowe. W kolejnych blokach użytkownik może dodać tytuł i opis radiostacji lub anteny oraz maksymalnie trzy 
+    zdjęcia wraz z krótkim opisem. Aby dodać zdjęcie do bloku, należy najpierw przesłać je na serwer – pojawi się wtedy miniaturka po prawej stronie panelu edycji. 
+    Zdjęcie dodaje się poprzez zaznaczenie checkboxa oraz kliknięcie przycisku „Dodaj zaznaczone zdjęcie” w danym bloku.
+
     
   description-04: |
-    Po dodaniu wizytówki użytkownik może edytować wizytówkę, zmieniać zdjęcia, dodawać nowe bloki oraz edytować istniejące bloki.
-    Po wyszukaniu znaku wywoławczego w wyszukiwarce, użytkownik może wybrać z listy wyników interesującą go stację i przejść do jej wizytówki.
-    Po kliknięciu zdjęcia na wizytówce użytkownika, uruchamiany jest podgląd slajdów zdjęć w pełnym rozmiarze.
+    Użytkownik może dodać maksymalnie 15 zdjęć do wizytówki. Liczba bloków nie jest ograniczona.
+
+    Po utworzeniu wizytówki użytkownik może ją edytować – zmieniać zdjęcia, dodawać nowe bloki i modyfikować istniejące. 
+    Po wyszukaniu znaku wywoławczego w wyszukiwarce, użytkownik może przejść do wybranej wizytówki. 
+    Kliknięcie zdjęcia w wizytówce uruchamia podgląd slajdów w pełnym rozmiarze.
+
   
   description-05: |
-    Projekt jest napisany w Symfony 6.4 w języku PHP.
-    Wykorzystuje bazę danych MySQL do przechowywania wizytówek oraz zdjęć.
-    Projekt posiada system logowania i rejestracji użytkowników z linkiem aktywacyjnym na maila oraz system resetowania hasła.
-    Zastosowałem Klasycznego CRUD (Create, Read, Update, Delete) do zarządzania wizytówkami.
+    Projekt został napisany w Symfony 6.4 w języku PHP. Wykorzystuje bazę danych MySQL do przechowywania wizytówek i zdjęć. 
+    System zawiera funkcje rejestracji i logowania z linkiem aktywacyjnym przesyłanym e-mailem oraz możliwość resetowania hasła. 
+    Do zarządzania wizytówkami zastosowano klasyczny model CRUD (Create, Read, Update, Delete).
 
   qrz-association-1: Panel użytkownika
   qrz-association-2: Edycja wizytówki
